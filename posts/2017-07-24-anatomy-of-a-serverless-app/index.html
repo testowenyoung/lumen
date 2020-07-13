@@ -1,0 +1,519 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/lumen/styles.1d0daeadf0762b76da98.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/lumen/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/lumen/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/lumen/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/lumen/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/lumen/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/lumen/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/lumen/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/lumen/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/lumen/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/lumen/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/lumen/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/lumen/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/lumen/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/lumen/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/lumen/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/lumen/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/lumen/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/lumen/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/lumen/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/lumen/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/lumen/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/lumen/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/lumen/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/lumen/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/lumen/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/lumen/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/lumen/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/lumen/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/lumen/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/lumen/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/lumen/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/lumen/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/lumen/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/lumen/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/lumen/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/lumen/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/lumen/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/lumen/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/lumen/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/lumen/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/lumen/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/lumen/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/lumen/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/lumen/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/lumen/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/lumen/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/lumen/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/lumen/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/lumen/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/lumen/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/lumen/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/lumen/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/lumen/rss.xml"/><link rel="icon" href="/lumen/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/lumen/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/lumen/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/lumen/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/lumen/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/lumen/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/lumen/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/lumen/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/lumen/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/lumen/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Anatomy of a Serverless Application | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="A step-by-step look at the development of a serverless application."/><meta data-react-helmet="true" property="og:title" content="Anatomy of a Serverless Application"/><meta data-react-helmet="true" property="og:description" content="A step-by-step look at the development of a serverless application."/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Anatomy of a Serverless Application"/><meta data-react-helmet="true" name="twitter:description" content="A step-by-step look at the development of a serverless application."/><link as="script" rel="preload" href="/lumen/webpack-runtime-c76c0c9d42bc9bf56761.js"/><link as="script" rel="preload" href="/lumen/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/lumen/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/lumen/app-36e457a5393b79b99515.js"/><link as="script" rel="preload" href="/lumen/commons-4c36ffabef1434ec1126.js"/><link as="script" rel="preload" href="/lumen/cd7d5f864fc9e15ed8adef086269b0aeff617554-c8f68cb3ade1320f5257.js"/><link as="script" rel="preload" href="/lumen/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/lumen/page-data/posts/2017-07-24-anatomy-of-a-serverless-app/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/lumen/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/lumen/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Anatomy of a Serverless Application</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">July 27, 2017</p></header><section><p>
+We’ve all been new to serverless before. In this post, I’ll walk you through how to get up and running on your first application. Let’s cut through the docs, shall we?</p>
+<p>This application will be a backend email service that can be called over HTTP from a simple frontend like <code class="language-text">curl</code>. You will learn how to:</p>
+<ul>
+<li>Setup the development environment</li>
+<li>Create an application project </li>
+<li>Create a serverless service using a boilerplate template</li>
+<li>Run and test the service locally</li>
+<li>Deploy the service</li>
+<li>Run the service via the public HTTP endpoint</li>
+<li>Perform basic validation and error handling</li>
+</ul>
+<h2>Getting Started</h2>
+<p>I had been following serverless technologies for a while, and skimmed over the provider documentation and examples. It was really helpful to know the lay of the land and what was available out there. AWS Lambda’s <a href="http://docs.aws.amazon.com/lambda/latest/dg/getting-started.html">getting started</a> documentation was helpful but overwhelming, and it was tedious to use the AWS Console. I wanted to use my own development workflow - code using my favorite editor, build using an easy to use toolchain, do a test/debug cycle, and finally deploy.</p>
+<p>I had to make some choices before I started development:</p>
+<ul>
+<li><strong>Programming language</strong>: <a href="https://nodejs.org/en/">NodeJS</a> (my familiarity, all serverless platforms support it)</li>
+<li><strong>Platform</strong>: <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> (most popular and mature, lots of supporting services)</li>
+<li><strong>Toolset</strong>: <a href="https://serverless.com/framework/">Serverless Framework</a> (opensource, repo with 17K+ stars, actively maintained, 2 week release cadence)</li>
+</ul>
+<h2>Setup</h2>
+<p>The initial setup was straightforward:</p>
+<ol>
+<li>Install NodeJS: <a href="https://nodejs.org/en/download/">download</a> or <a href="https://nodejs.org/en/download/package-manager/#osx">using package manager</a></li>
+<li>Install the <a href="https://serverless.com/framework/">Serverless Framework</a>: <code class="language-text">npm install -g serverless</code></li>
+<li>
+<p>Setup an AWS account</p>
+<ul>
+<li><a href="http://docs.aws.amazon.com/lambda/latest/dg/setting-up.html#setting-up-signup">Sign up for AWS</a></li>
+<li><a href="http://docs.aws.amazon.com/lambda/latest/dg/setting-up.html#setting-up-iam">Create an IAM User</a></li>
+<li><a href="http://docs.aws.amazon.com/lambda/latest/dg/setup-awscli.html">Install and setup AWS CLI</a></li>
+</ul>
+</li>
+</ol>
+<p>The AWS setup is necessary so that we can deploy our serverless application on AWS Lambda. After creating the AWS IAM user,  we’ll have to <a href="https://serverless.com/framework/docs/providers/aws/guide/credentials/">configure the credentials</a> to give access to the Serverless Framework, for creating and managing resources on our behalf.</p>
+<p>You can use either of the options to configure the credentials:</p>
+<p><code class="language-text">aws configure</code> or <code class="language-text">serverless config credentials</code></p>
+<blockquote>
+<p>Setting up an account with AWS and configuring was the most time-consuming and painful process, but as you will see, it gets better after that. So keep chugging along.</p>
+</blockquote>
+<h2>Creating the Project</h2>
+<p>A little bit of planning on the project structure makes a lot of difference in visualizing the different parts of the system. We will build an application named <code class="language-text">postman</code>, with a simple frontend using <code class="language-text">curl</code> and a backend serverless email service, to send out emails to users over HTTP.</p>
+<p>Here is an example that works for me:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token operator">|</span>-- postman
+  <span class="token operator">|</span>-- README.md
+  <span class="token operator">|</span>-- frontend
+  `-- services</code></pre></div>
+<p>where,</p>
+<ul>
+<li><code class="language-text">frontend</code> folder holds the frontend application</li>
+<li><code class="language-text">services</code> folder holds the serverless service(s)</li>
+</ul>
+<p>A structure like this provides clear separation for the non-serverless and serverless code for the overall application. The way the non-serverless portion of the application is written is totally your choice. In this post, I will primarily focus on the serverless portion of the application inside the <code class="language-text">services</code> folder. We will not create a frontend application, so we don’t need the <code class="language-text">frontend</code> folder.</p>
+<h2>Creating the Email Service</h2>
+<p>Let’s create an email service that will send out emails to users with some text. We will use <a href="https://www.mailgun.com/">Mailgun</a> as our email service provider, and shoot for making the email service generic enough to be reused across other applications.</p>
+<h3>Starting With a Boilerplate Template</h3>
+<p>The Serverless Framework comes with boilerplate templates that make it really quick to get started. In our case, since we are using AWS as our provider and NodeJS as our language of choice, we will start with:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token builtin class-name">cd</span> services
+$ serverless create --template aws-nodejs --path email-service</code></pre></div>
+<p>which creates the service for us:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">Serverless: Generating boilerplate<span class="token punctuation">..</span>.
+Serverless: Generating boilerplate <span class="token keyword">in</span> <span class="token string">"/home/svrless/apps/postman/services/email-service"</span>
+ _______                             __
+<span class="token operator">|</span>   _   .-----.----.--.--.-----.----<span class="token operator">|</span>  .-----.-----.-----.
+<span class="token operator">|</span>   <span class="token operator">|</span>___<span class="token operator">|</span>  -__<span class="token operator">|</span>   _<span class="token operator">|</span>  <span class="token operator">|</span>  <span class="token operator">|</span>  -__<span class="token operator">|</span>   _<span class="token operator">|</span>  <span class="token operator">|</span>  -__<span class="token operator">|</span>__ --<span class="token operator">|</span>__ --<span class="token operator">|</span>
+<span class="token operator">|</span>____   <span class="token operator">|</span>_____<span class="token operator">|</span>__<span class="token operator">|</span>  <span class="token punctuation">\</span>___/<span class="token operator">|</span>_____<span class="token operator">|</span>__<span class="token operator">|</span> <span class="token operator">|</span>__<span class="token operator">|</span>_____<span class="token operator">|</span>_____<span class="token operator">|</span>_____<span class="token operator">|</span>
+<span class="token operator">|</span>   <span class="token operator">|</span>   <span class="token operator">|</span>             The Serverless Application Framework
+<span class="token operator">|</span>       <span class="token operator">|</span>                           serverless.com, v1.16.0
+ -------'
+
+Serverless: Successfully generated boilerplate <span class="token keyword">for</span> template: <span class="token string">"aws-nodejs"</span></code></pre></div>
+<blockquote>
+<p>Read the docs for more info. on <a href="https://serverless.com/framework/docs/providers/aws/guide/services#creation">creating a service</a>.</p>
+</blockquote>
+<p>We will briefly look at the generated files and then modify them to suit our requirements.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token operator">|</span>-- services
+    <span class="token variable"><span class="token variable">`</span>-- email-service
+        <span class="token operator">|</span>-- handler.js
+        <span class="token variable">`</span></span>-- serverless.yml</code></pre></div>
+<p>Let’s look at the <code class="language-text">serverless.yml</code> and the <code class="language-text">handler.js</code> files. I have removed the commented lines for brevity and clarity. <strong>Note</strong>: I have updated the function and handler names, to suit the example.</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token key atrule">service</span><span class="token punctuation">:</span> email<span class="token punctuation">-</span>service
+
+<span class="token key atrule">provider</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> aws
+  <span class="token key atrule">runtime</span><span class="token punctuation">:</span> nodejs6.10
+  
+<span class="token key atrule">functions</span><span class="token punctuation">:</span>
+  <span class="token key atrule">send</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> handler.sendEmail</code></pre></div>
+<p>The <strong>serverless.yml</strong> file describes the service and it’s where you define your <code class="language-text">provider</code> settings, <code class="language-text">functions</code> with their corresponding handlers, <code class="language-text">events</code> that trigger them, and provider <code class="language-text">resources</code> needed by the service.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"># handler<span class="token punctuation">.</span>js
+
+<span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span><span class="token function-variable function">sendEmail</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> context<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> message<span class="token operator">:</span> <span class="token string">'Go Serverless! Simulating sending emails successful.'</span><span class="token punctuation">,</span> event <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>The <strong>handler.js</strong> file contains your function code. The function definition in <code class="language-text">serverless.yml</code> will point to this <code class="language-text">handler.js</code> file and the function defined here. <strong>Note</strong>: I have updated the handler name and the code within to suit our example.</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token punctuation">...</span>
+<span class="token key atrule">functions</span><span class="token punctuation">:</span>
+  <span class="token key atrule">send</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> handler.sendEmail</code></pre></div>
+<p>In our example, <code class="language-text">handler: handler.sendEmail</code> in the <code class="language-text">serverless.yml</code> file points to <code class="language-text">module.exports.sendEmail</code> in the <code class="language-text">handler.js</code> file.</p>
+<p>Also, note that while the handler method defined in <code class="language-text">handler.js</code> file is <code class="language-text">sendEmail</code>, the function name defined in <code class="language-text">serverless.yml</code> file is <code class="language-text">send</code>. The <code class="language-text">serverless.yml</code> file provides the glue for that mapping. </p>
+<h3>Invoke Locally</h3>
+<p>Let’s run the <code class="language-text">send</code> function locally:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token builtin class-name">cd</span> services/email-service
+$ serverless invoke <span class="token builtin class-name">local</span> --function <span class="token function-name function">send</span>
+<span class="token punctuation">{</span>
+    <span class="token string">"message"</span><span class="token builtin class-name">:</span> <span class="token string">"Go Serverless! Simulating sending emails successful."</span>,
+    <span class="token string">"event"</span><span class="token builtin class-name">:</span> <span class="token string">""</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>We have successfully run a serverless function locally. It is very important to be able to run a function locally while you are developing, so you can get quick feedback.</p>
+<h3>Mapping an HTTP endpoint</h3>
+<p>To be able to share this service across other applications, it is important that our service can be accessed publicly. Let’s map an HTTP endpoint to our function so that we can call our function publicly over the web. Again, the <code class="language-text">serverless.yml</code> file provides the glue to that mapping.</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token key atrule">service</span><span class="token punctuation">:</span> email<span class="token punctuation">-</span>service
+
+<span class="token key atrule">provider</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> aws
+  <span class="token key atrule">runtime</span><span class="token punctuation">:</span> nodejs6.10
+  
+<span class="token key atrule">functions</span><span class="token punctuation">:</span>
+  <span class="token key atrule">send</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> handler.sendEmail
+    <span class="token key atrule">events</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span>
+          <span class="token key atrule">path</span><span class="token punctuation">:</span> email
+          <span class="token key atrule">method</span><span class="token punctuation">:</span> post</code></pre></div>
+<p>The <code class="language-text">events</code> sub-section defines the mapping of the <code class="language-text">send</code> function to the <code class="language-text">http</code> endpoint of <code class="language-text">email</code>, and defines it to be of type <code class="language-text">post</code>.</p>
+<blockquote>
+<p>Read the docs for detailed info. on the <a href="https://serverless.com/framework/docs/providers/aws/guide/services">services</a>, <a href="https://serverless.com/framework/docs/providers/aws/guide/functions/">functions</a>, <a href="https://serverless.com/framework/docs/providers/aws/guide/events/">events</a>, and <a href="https://serverless.com/framework/docs/providers/aws/guide/resources/">resources</a>.</p>
+</blockquote>
+<p>The current code as shown below, has a response which is not good for HTTP results:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> message<span class="token operator">:</span> <span class="token string">'Go Serverless! Simulating sending emails successful.'</span><span class="token punctuation">,</span> event <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>The <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html">HTTP response</a> expects a shape that has a status code and a body attribute. So we will change the response shape to follow the HTTP convention.</p>
+<p>Testing it locally shows the newly-updated response.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ serverless invoke <span class="token builtin class-name">local</span> --function <span class="token function-name function">send</span>
+
+<span class="token punctuation">{</span>
+    <span class="token string">"statusCode"</span><span class="token builtin class-name">:</span> <span class="token number">200</span>,
+    <span class="token string">"body"</span><span class="token builtin class-name">:</span> <span class="token string">"{<span class="token entity" title="\&quot;">\"</span>message<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span>Go Serverless! Simulating sending emails successful.<span class="token entity" title="\&quot;">\"</span>,<span class="token entity" title="\&quot;">\"</span>input<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span><span class="token entity" title="\&quot;">\"</span>}"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Deploy to AWS</h3>
+<p>Now, let’s deploy it to AWS Lambda, so we can invoke the function over the HTTP endpoint we created. </p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls deploy
+Serverless: Packaging service<span class="token punctuation">..</span>.
+Serverless: Creating Stack<span class="token punctuation">..</span>.
+Serverless: Checking Stack create progress<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span><span class="token punctuation">..</span>.
+Serverless: Stack create finished<span class="token punctuation">..</span>.
+Serverless: Uploading CloudFormation <span class="token function">file</span> to S3<span class="token punctuation">..</span>.
+Serverless: Uploading artifacts<span class="token punctuation">..</span>.
+Serverless: Uploading <span class="token function">service</span> .zip <span class="token function">file</span> to S3 <span class="token punctuation">(</span><span class="token number">336</span> B<span class="token punctuation">)</span><span class="token punctuation">..</span>.
+Serverless: Validating template<span class="token punctuation">..</span>.
+Serverless: Updating Stack<span class="token punctuation">..</span>.
+Serverless: Checking Stack update progress<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>
+Serverless: Stack update finished<span class="token punctuation">..</span>.
+Service Information
+service: email-service
+stage: dev
+region: us-east-1
+api keys:
+  None
+endpoints:
+  POST - https://xdsf3ghy2s.execute-api.us-east-1.amazonaws.com/dev/email
+functions:
+  send: email-service-dev-send</code></pre></div>
+<p>There is a lot going on behind the scenes, which the Serverless Framework does for you. <code class="language-text">sls deploy</code> will deploy all functions in your service. If you are just iterating on a single function, you can use <code class="language-text">sls deploy function --function send</code> to just deploy the named function.</p>
+<blockquote>
+<p>Read the docs for detailed info. on <a href="https://serverless.com/framework/docs/providers/aws/guide/deploying/">deployment</a> of services.</p>
+</blockquote>
+<p>Without going into the details of the deployment itself, let’s first focus on the usability aspect of the service. The output above gives us the HTTP endpoint for our service.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">endpoints:
+  POST - https://smif3ghy1c.execute-api.us-east-1.amazonaws.com/dev/email</code></pre></div>
+<p><strong>Note</strong>, A stage identifier <code class="language-text">dev</code> has been added automatically to the endpoint and the function name. You can specify a <code class="language-text">stage</code> section in <code class="language-text">serverless.yml</code> but it uses <code class="language-text">dev</code> by default in our case.</p>
+<p>Let’s test the deployed function by running it via <code class="language-text">curl</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">curl</span> -X POST https://smif3ghy1c.execute-api.us-east-1.amazonaws.com/dev/email -d <span class="token string">'{}'</span></code></pre></div>
+<p>and we get the following response:</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+   <span class="token property">"message"</span><span class="token operator">:</span><span class="token string">"Go Serverless! Simulating sending emails successful."</span><span class="token punctuation">,</span>
+   <span class="token property">"input"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+      <span class="token property">"resource"</span><span class="token operator">:</span><span class="token string">"/email"</span><span class="token punctuation">,</span>
+      <span class="token property">"path"</span><span class="token operator">:</span><span class="token string">"/email"</span><span class="token punctuation">,</span>
+      <span class="token property">"httpMethod"</span><span class="token operator">:</span><span class="token string">"POST"</span><span class="token punctuation">,</span>
+      <span class="token property">"headers"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+         ...
+         <span class="token property">"Content-Type"</span><span class="token operator">:</span><span class="token string">"application/x-www-form-urlencoded"</span><span class="token punctuation">,</span>
+         <span class="token property">"Host"</span><span class="token operator">:</span><span class="token string">"smif3ghy1c.execute-api.us-east-1.amazonaws.com"</span><span class="token punctuation">,</span>
+         ...
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"queryStringParameters"</span><span class="token operator">:</span><span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">"pathParameters"</span><span class="token operator">:</span><span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">"stageVariables"</span><span class="token operator">:</span><span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">"requestContext"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+         <span class="token property">"path"</span><span class="token operator">:</span><span class="token string">"/dev/email"</span><span class="token punctuation">,</span>
+         <span class="token property">"stage"</span><span class="token operator">:</span><span class="token string">"dev"</span><span class="token punctuation">,</span>
+         <span class="token property">"requestId"</span><span class="token operator">:</span><span class="token string">"1234acaa-5dcd-11e7-afcd-43efe3598b81"</span><span class="token punctuation">,</span>
+         <span class="token property">"identity"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+            ...
+            <span class="token property">"cognitoIdentityPoolId"</span><span class="token operator">:</span><span class="token null keyword">null</span><span class="token punctuation">,</span>
+            ...
+         <span class="token punctuation">}</span><span class="token punctuation">,</span>
+         <span class="token property">"resourcePath"</span><span class="token operator">:</span><span class="token string">"/email"</span><span class="token punctuation">,</span>
+         <span class="token property">"httpMethod"</span><span class="token operator">:</span><span class="token string">"POST"</span><span class="token punctuation">,</span>
+         <span class="token property">"apiId"</span><span class="token operator">:</span><span class="token string">"smif3ghy1c"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"body"</span><span class="token operator">:</span><span class="token string">"{}"</span><span class="token punctuation">,</span>
+      ...
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><strong>Note</strong>: For brevity, I left some important items in the output JSON and deleted the rest.</p>
+<p>Another important aspect to note is the <code class="language-text">event</code> structure coming back from AWS API Gateway in the <code class="language-text">input</code> attribute of the output JSON, as shown above. We will use this <code class="language-text">event</code> structure to simulate local testing in the upcoming sections.</p>
+<p>So, we have come full circle - starting with some boilerplate code, customizing a function, adding an HTTP endpoint, testing it locally, deploying it to AWS and finally running it live using the HTTP endpoint.</p>
+<p>To remove the service, you can simply do <code class="language-text">sls remove</code>.</p>
+<blockquote>
+<p><strong>Takeaway</strong>: We did all this without thinking about servers or infrastructure, or how we will deploy the service after we are done with development. It just happened as part of our development workflow. The developer just focused on coding their business requirements, experimenting with features, and getting a quick feedback cycle - without worrying about deployment or provisioning infrastructure. That is the power and essence of serverless development. </p>
+</blockquote>
+<h3>Implementing the Email Service</h3>
+<p>Let’s implement the email functionality and finish up our email service. At the end of it, we will have a fully functional service that can send emails. </p>
+<h4>Setting up Mailgun</h4>
+<p>We will use <a href="https://www.mailgun.com/">Mailgun</a> as our backend email service provider. To use the service, <a href="https://app.mailgun.com/new/signup/">sign up for a free account</a>, retrieve the <a href="https://mailgun.com/app/dashboard">API keys from the dashboard</a>, and configure them as part of the service.</p>
+<blockquote>
+<p>Read the <a href="https://documentation.mailgun.com/en/latest/">Mailgun docs</a>, to get started on sending emails.</p>
+</blockquote>
+<h4>Configuring the Service</h4>
+<p>Let’s go back to our handler method <code class="language-text">sendEmails</code> in <code class="language-text">handler.js</code> file and update it. We will use the Node.js module <a href="https://www.npmjs.com/package/mailgun-js">mailgun_js</a> for sending emails using the Mailgun API. </p>
+<p>Let’s add the dependency. <strong>Note</strong>: You can <code class="language-text">npm init</code> and follow the prompts to create your initial <code class="language-text">package.json</code> file.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> mailgun-js --save</code></pre></div>
+<p>We should have:</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  ...
+    <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"mailgun-js"</span><span class="token operator">:</span> <span class="token string">"^0.11.2"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>We need a place to store our configuration settings that the service can use. We will use a JSON formatted config file to stash our settings. The idea is to have one config file per stage of deployment i.e. dev, test, prod etc. Here is the <code class="language-text">config.prod.example.json</code> file with some settings. Rename the file to <code class="language-text">config.prod.json</code> and supply the values.</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"># config.prod.example.json
+
+<span class="token punctuation">{</span>
+  <span class="token property">"region"</span><span class="token operator">:</span> <span class="token string">"us-east-1"</span><span class="token punctuation">,</span>
+  <span class="token property">"MAILGUN_APIKEY"</span><span class="token operator">:</span> <span class="token string">"your-mailgun-key-here"</span><span class="token punctuation">,</span>
+  <span class="token property">"MAILGUN_DOMAIN"</span><span class="token operator">:</span> <span class="token string">"your-mailgun-domain-here"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><strong>Note:</strong> Make sure that you <strong>DON’T</strong> check-in the <code class="language-text">config.prod.json</code> config file with your secrets into source control.</p>
+<p>Let’s look at some updates to the configuration settings in the <code class="language-text">serverless.yml</code> file. </p>
+<ul>
+<li>add <code class="language-text">custom</code> section for custom settings</li>
+<li>add <code class="language-text">environment</code> section to add the Mailgun settings</li>
+<li>update the <code class="language-text">provider</code> section to add a stage and a region</li>
+</ul>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token punctuation">...</span>
+<span class="token key atrule">custom</span><span class="token punctuation">:</span>
+  <span class="token key atrule">defaultStage</span><span class="token punctuation">:</span> prod
+  <span class="token key atrule">currentStage</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>opt<span class="token punctuation">:</span>stage<span class="token punctuation">,</span> self<span class="token punctuation">:</span>custom.defaultStage<span class="token punctuation">}</span>
+  <span class="token key atrule">currentRegion</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>file(./config.$<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.currentStage<span class="token punctuation">}</span>.json)<span class="token punctuation">:</span>region<span class="token punctuation">}</span>
+  
+<span class="token key atrule">provider</span><span class="token punctuation">:</span>
+  <span class="token punctuation">...</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.currentStage<span class="token punctuation">}</span>
+  <span class="token key atrule">region</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.currentRegion<span class="token punctuation">}</span>
+  <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+    <span class="token key atrule">MAILGUN_APIKEY</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>file(./config.$<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.currentStage<span class="token punctuation">}</span>.json)<span class="token punctuation">:</span>MAILGUN_APIKEY<span class="token punctuation">}</span>
+    <span class="token key atrule">MAILGUN_DOMAIN</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>file(./config.$<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.currentStage<span class="token punctuation">}</span>.json)<span class="token punctuation">:</span>MAILGUN_DOMAIN<span class="token punctuation">}</span>
+<span class="token punctuation">...</span></code></pre></div>
+<p>One thing to note here, is the use of <code class="language-text">${file(./config.${self:custom.currentStage}</code> to read the correct config file based on the value of <code class="language-text">currentStage</code> which in turn is defined in the <code class="language-text">custom</code> section. So just by changing the value of the <code class="language-text">currentStage</code> and providing a config file named <code class="language-text">config.&lt;stage&gt;.json</code>, you can have multiple configurations per stage of deployment.</p>
+<h4>Sending Emails</h4>
+<p>With the configuration out of the way, we can now focus on the actual code to send emails via Mailgun.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token constant">MAILGUN_APIKEY</span>   <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">MAILGUN_APIKEY</span>
+<span class="token keyword">const</span> <span class="token constant">MAILGUN_DOMAIN</span>   <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">MAILGUN_DOMAIN</span>
+
+<span class="token keyword">const</span> mailgun <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mailgun-js'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  apiKey<span class="token operator">:</span> <span class="token constant">MAILGUN_APIKEY</span><span class="token punctuation">,</span>
+  domain<span class="token operator">:</span> <span class="token constant">MAILGUN_DOMAIN</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>First, we initialize the <code class="language-text">mailgun-js</code> module with the API key and domain, retrieving the appropriate values from the process’ <code class="language-text">env</code> space.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> fromAddress    <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;demo@MAILGUN_DOMAIN></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> subjectText    <span class="token operator">=</span> <span class="token string">"Serverless Email Demo"</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> messageText    <span class="token operator">=</span> <span class="token string">'Sample email sent from Serverless Email Demo.'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> messageHtml    <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+&lt;html>
+  &lt;title>Serverless Email Demo&lt;/title>
+  &lt;body>
+    &lt;div>
+      &lt;h1>Serverless Email Demo&lt;/h1>
+      &lt;span>Sample email sent from Serverless Email Demo.&lt;/span>
+    &lt;/div>
+  &lt;/body>
+&lt;/html>
+</span><span class="token template-punctuation string">`</span></span></code></pre></div>
+<p>Then, we define some constants, text and HTML content that will form the body of the email.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span><span class="token function-variable function">sendEmail</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> context<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">var</span> toAddress <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span>body<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      toAddress <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">.</span>to_address <span class="token operator">||</span> <span class="token string">""</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>toAddress <span class="token operator">!==</span> <span class="token string">""</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">const</span> emailData <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token keyword">from</span><span class="token operator">:</span> fromAddress<span class="token punctuation">,</span>
+        to<span class="token operator">:</span> toAddress<span class="token punctuation">,</span>
+        subject<span class="token operator">:</span> subjectText<span class="token punctuation">,</span>
+        text<span class="token operator">:</span> messageText<span class="token punctuation">,</span>
+        html<span class="token operator">:</span> messageHtml
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// send email</span>
+    mailgun<span class="token punctuation">.</span><span class="token function">messages</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>emailData<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">error<span class="token punctuation">,</span> body</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// log error response</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">callback</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token punctuation">{</span>
+          statusCode<span class="token operator">:</span> <span class="token number">202</span><span class="token punctuation">,</span>
+          body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            message<span class="token operator">:</span> <span class="token string">"Request to send email is successful."</span><span class="token punctuation">,</span>
+            input<span class="token operator">:</span> body<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> err <span class="token operator">=</span> <span class="token punctuation">{</span>
+      statusCode<span class="token operator">:</span> <span class="token number">422</span><span class="token punctuation">,</span>
+      body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        message<span class="token operator">:</span> <span class="token string">"Bad input data or missing email address."</span><span class="token punctuation">,</span>
+        input<span class="token operator">:</span> event<span class="token punctuation">.</span>body<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">// log error response</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>First, we define the handler method <code class="language-text">sendEmail</code> that is mapped to the function <code class="language-text">send</code> in the <code class="language-text">serverless.yml</code> file. This method does some basic validation and then calls the <code class="language-text">mailgun.messages().send()</code> API method passing in the required data via the <code class="language-text">emailData</code> structure. </p>
+<p>We define some basic error handling code block, and if there is no error, it returns an appropriate response back. In case of an error, an appropriate error response is returned.</p>
+<p>Note that the <code class="language-text">event.body</code> holds the input data that is passed in by the caller.</p>
+<h4>Testing Locally</h4>
+<p>Before we deploy our function, let’s test it locally first. </p>
+<p>To make it easier to test, let’s create a data file <code class="language-text">send-email-data.json</code> that mocks the <code class="language-text">event</code> data structure passed in by the API Gateway:</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"resource"</span><span class="token operator">:</span><span class="token string">"/email"</span><span class="token punctuation">,</span>
+  <span class="token property">"path"</span><span class="token operator">:</span><span class="token string">"/email"</span><span class="token punctuation">,</span>
+  <span class="token property">"httpMethod"</span><span class="token operator">:</span><span class="token string">"POST"</span><span class="token punctuation">,</span>
+  <span class="token property">"headers"</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"queryStringParameters"</span><span class="token operator">:</span><span class="token null keyword">null</span><span class="token punctuation">,</span>
+  <span class="token property">"pathParameters"</span><span class="token operator">:</span><span class="token null keyword">null</span><span class="token punctuation">,</span>
+  <span class="token property">"stageVariables"</span><span class="token operator">:</span><span class="token null keyword">null</span><span class="token punctuation">,</span>
+  <span class="token property">"requestContext"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+     <span class="token property">"path"</span><span class="token operator">:</span><span class="token string">"/prod/email"</span><span class="token punctuation">,</span>
+     <span class="token property">"stage"</span><span class="token operator">:</span><span class="token string">"prod"</span><span class="token punctuation">,</span>
+     <span class="token property">"requestId"</span><span class="token operator">:</span><span class="token string">"123"</span><span class="token punctuation">,</span>
+     <span class="token property">"resourcePath"</span><span class="token operator">:</span><span class="token string">"/email"</span><span class="token punctuation">,</span>
+     <span class="token property">"httpMethod"</span><span class="token operator">:</span><span class="token string">"POST"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"body"</span><span class="token operator">:</span><span class="token string">"{\"to_address\":\"your@email.com\"}"</span><span class="token punctuation">,</span>
+  <span class="token property">"isBase64Encoded"</span><span class="token operator">:</span><span class="token boolean">false</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Although we have a lot of attributes in the mocked data structure, the bare minimum attribute we need to make it work is the <code class="language-text">body</code> attribute with its value.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls invoke <span class="token builtin class-name">local</span> --function send -p send-email-data.json
+
+<span class="token punctuation">{</span>
+    <span class="token string">"statusCode"</span><span class="token builtin class-name">:</span> <span class="token number">202</span>,
+    <span class="token string">"body"</span><span class="token builtin class-name">:</span> <span class="token string">"{<span class="token entity" title="\&quot;">\"</span>message<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span>Request to send email is successful.<span class="token entity" title="\&quot;">\"</span>,<span class="token entity" title="\&quot;">\"</span>input<span class="token entity" title="\&quot;">\"</span>:{<span class="token entity" title="\&quot;">\"</span>id<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span>&lt;20170721005146.92353.69A8F3012CBF231A@yourdomain.mailgun.org><span class="token entity" title="\&quot;">\"</span>,<span class="token entity" title="\&quot;">\"</span>message<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span>Queued. Thank you.<span class="token entity" title="\&quot;">\"</span>}}"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Note, that we pass the mock <code class="language-text">event</code> structure in the <code class="language-text">send-email-data.json</code> file via the <code class="language-text">-p</code> flag. The <code class="language-text">event</code> structure contains the email address required by our function in the <code class="language-text">body</code> attribute.  </p>
+<p>And, now you should have an email in your inbox:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">From: demo@mailgun_domain
+Date: July 3, 2017 at 7:02:07 PM EDT
+To: your@email.com
+Subject: Serverless Email Demo
+
+Serverless Email Demo
+
+Sample email sent from Serverless Email Demo.</code></pre></div>
+<p>Alternatively, if we test for the not-so-happy path, i.e. calling without passing in an email address, we get our desired error message:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls invoke <span class="token builtin class-name">local</span> --function <span class="token function-name function">send</span>
+
+<span class="token punctuation">{</span>
+    <span class="token string">"statusCode"</span><span class="token builtin class-name">:</span> <span class="token number">422</span>,
+    <span class="token string">"body"</span><span class="token builtin class-name">:</span> <span class="token string">"{<span class="token entity" title="\&quot;">\"</span>message<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span>Bad input data or missing email address.<span class="token entity" title="\&quot;">\"</span>}"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h2>Deploying the Email Service</h2>
+<p>Now that we feel we have the functionality working well, let’s deploy the service.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls deploy
+
+Serverless: Packaging service<span class="token punctuation">..</span>.
+Serverless: Uploading CloudFormation <span class="token function">file</span> to S3<span class="token punctuation">..</span>.
+Serverless: Uploading artifacts<span class="token punctuation">..</span>.
+Serverless: Uploading <span class="token function">service</span> .zip <span class="token function">file</span> to S3 <span class="token punctuation">(</span><span class="token number">2.03</span> MB<span class="token punctuation">)</span><span class="token punctuation">..</span>.
+Serverless: Validating template<span class="token punctuation">..</span>.
+Serverless: Updating Stack<span class="token punctuation">..</span>.
+Serverless: Checking Stack update progress<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>.
+Serverless: Stack update finished<span class="token punctuation">..</span>.
+Service Information
+service: email-service
+stage: prod
+region: us-east-1
+api keys:
+  None
+endpoints:
+  POST - https://yt1i5ydiu4.execute-api.us-east-1.amazonaws.com/prod/email
+functions:
+  send: email-service-prod-send</code></pre></div>
+<p>Note, that the stage used is <code class="language-text">prod</code> and it is reflected in the function name <code class="language-text">email-service-prod-send</code>, and the resulting endpoint.</p>
+<h3>Calling the Service</h3>
+<p>Let’s call the live function that has been deployed to AWS. We will explore the <code class="language-text">--log</code> flag that will output logging information about our invocation.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls invoke --function send -p send-email-data.json --log
+
+<span class="token punctuation">{</span>
+    <span class="token string">"statusCode"</span><span class="token builtin class-name">:</span> <span class="token number">202</span>,
+    <span class="token string">"body"</span><span class="token builtin class-name">:</span> <span class="token string">"{<span class="token entity" title="\&quot;">\"</span>message<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span>Request to send email is successful.<span class="token entity" title="\&quot;">\"</span>,<span class="token entity" title="\&quot;">\"</span>input<span class="token entity" title="\&quot;">\"</span>:{<span class="token entity" title="\&quot;">\"</span>id<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span>&lt;20170721005341.92497.BF1D6AF2BA38787B@yourdomain.mailgun.org><span class="token entity" title="\&quot;">\"</span>,<span class="token entity" title="\&quot;">\"</span>message<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span>Queued. Thank you.<span class="token entity" title="\&quot;">\"</span>}}"</span>
+<span class="token punctuation">}</span>
+--------------------------------------------------------------------
+START RequestId: 09bd13cd-6daf-11e7-87e0-e9f5c3dd5058 Version: <span class="token variable">$LATEST</span>
+<span class="token number">2017</span>-07-21 00:53:41.960 <span class="token punctuation">(</span>+00:00<span class="token punctuation">)</span>	09bd13cd-6daf-11e7-87e0-e9f5c3dd5058	<span class="token punctuation">{</span> statusCode: <span class="token number">202</span>,
+  body: <span class="token string">'{"message":"Request to send email is successful.","input":{"id":"&lt;20170721005341.92497.BF1D6AF2BA38787B@yourdomain.mailgun.org>","message":"Queued. Thank you."}}'</span> <span class="token punctuation">}</span>
+END RequestId: 09bd13cd-6daf-11e7-87e0-e9f5c3dd5058
+REPORT RequestId: 09bd13cd-6daf-11e7-87e0-e9f5c3dd5058	Duration: <span class="token number">439.95</span> ms	Billed Duration: <span class="token number">500</span> ms 	Memory Size: <span class="token number">1024</span> MB	Max Memory Used: <span class="token number">38</span> MB</code></pre></div>
+<p>The email is successfully sent.</p>
+<p>Since the deployment output also shows the HTTP endpoint for our email service, we can use <code class="language-text">curl</code> to call that endpoint, passing it an email address.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">curl</span> -X POST https://yt1i5ydiu4.execute-api.us-east-1.amazonaws.com/prod/email -d <span class="token string">'{"to_address":"your@email.com"}'</span>
+
+HTTP/1.1 <span class="token number">202</span> Accepted
+<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span>.
+
+<span class="token punctuation">{</span><span class="token string">"message"</span><span class="token builtin class-name">:</span><span class="token string">"Request to send email is successful."</span>,<span class="token string">"input"</span>:<span class="token punctuation">{</span><span class="token string">"id"</span><span class="token builtin class-name">:</span><span class="token string">"&lt;20170721005711.6305.4865866169A6F957@sandbox77a6b258412d4bb9a2d12abeb33ac01e.mailgun.org>"</span>,<span class="token string">"message"</span><span class="token builtin class-name">:</span><span class="token string">"Queued. Thank you."</span><span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre></div>
+<p>Again, another email is successfully sent.</p>
+<h3>Error Handling</h3>
+<p>To have our code gracefully handle errors and bad input, I have added some validation checks. The code makes sure that if bad input data is passed in, the function returns an error even before calling the <code class="language-text">mailgun</code> API method. That means quicker response times with potential cost gains at the Mailgun API side. Let’s try out some error edge cases and see the results:</p>
+<p><strong>No Data</strong></p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">curl</span> -i -X POST https://yt1i5ydiu4.execute-api.us-east-1.amazonaws.com/prod/email
+
+<span class="token punctuation">{</span><span class="token string">"message"</span><span class="token builtin class-name">:</span><span class="token string">"Bad input data or missing email address."</span>,<span class="token string">"input"</span>:null<span class="token punctuation">}</span></code></pre></div>
+<p><strong>Bad Data</strong></p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">curl</span> -i -X POST -d <span class="token string">'{"to_address":""}'</span> https://yt1i5ydiu4.execute-api.us-east-1.amazonaws.com/prod/email
+
+<span class="token punctuation">{</span><span class="token string">"message"</span><span class="token builtin class-name">:</span><span class="token string">"Bad input data or missing email address."</span>,<span class="token string">"input"</span><span class="token builtin class-name">:</span><span class="token string">"{<span class="token entity" title="\&quot;">\"</span>to_address<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span><span class="token entity" title="\&quot;">\"</span>}"</span><span class="token punctuation">}</span></code></pre></div>
+<p><strong>Note</strong>: Testing with bad input data <code class="language-text">-d &#39;{}&#39;</code> or <code class="language-text">-d &#39;{&quot;junk&quot;}&#39;</code>, results in the same output.</p>
+<p><strong>Malformed Email Address</strong></p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">curl</span> -i -X POST -d <span class="token string">'{"to_address":"junk"}'</span> https://yt1i5ydiu4.execute-api.us-east-1.amazonaws.com/prod/email
+
+<span class="token punctuation">{</span><span class="token string">"message"</span><span class="token builtin class-name">:</span> <span class="token string">"Internal server error"</span><span class="token punctuation">}</span></code></pre></div>
+<p><code class="language-text">curl</code> kind of barfs, as the function causes an exception in this case. We can see the exception if we call the function with the framework:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls invoke --function send --data <span class="token string">'{"body":"{<span class="token entity" title="\&quot;">\"</span>to_address<span class="token entity" title="\&quot;">\"</span>:<span class="token entity" title="\&quot;">\"</span>junk<span class="token entity" title="\&quot;">\"</span>}"}'</span> --log
+
+<span class="token punctuation">{</span>
+    <span class="token string">"errorMessage"</span><span class="token builtin class-name">:</span> <span class="token string">"'to' parameter is not a valid address. please check documentation"</span>,
+    <span class="token string">"errorType"</span><span class="token builtin class-name">:</span> <span class="token string">"Error"</span>,
+    <span class="token string">"stackTrace"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">..</span>.
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+--------------------------------------------------------------------
+START RequestId: 0eb38aeb-6d9d-11e7-9787-2996c7e3fdb0 Version: <span class="token variable">$LATEST</span>
+<span class="token number">2017</span>-07-20 <span class="token number">22</span>:44:58.544 <span class="token punctuation">(</span>+00:00<span class="token punctuation">)</span>	0eb38aeb-6d9d-11e7-9787-2996c7e3fdb0	<span class="token punctuation">{</span> Error: <span class="token string">'to'</span> parameter is not a valid address. please check documentation
+<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span>.
+<span class="token number">2017</span>-07-20 <span class="token number">22</span>:44:58.545 <span class="token punctuation">(</span>+00:00<span class="token punctuation">)</span>	0eb38aeb-6d9d-11e7-9787-2996c7e3fdb0	<span class="token punctuation">{</span><span class="token string">"errorMessage"</span><span class="token builtin class-name">:</span><span class="token string">"'to' parameter is not a valid address. please check documentation"</span>,<span class="token string">"errorType"</span><span class="token builtin class-name">:</span><span class="token string">"Error"</span>,<span class="token string">"stackTrace"</span><span class="token builtin class-name">:</span>
+<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span>.
+END RequestId: 0eb38aeb-6d9d-11e7-9787-2996c7e3fdb0
+REPORT RequestId: 0eb38aeb-6d9d-11e7-9787-2996c7e3fdb0	Duration: <span class="token number">339.84</span> ms	Billed Duration: <span class="token number">400</span> ms 	Memory Size: <span class="token number">1024</span> MB	Max Memory Used: <span class="token number">41</span> MB</code></pre></div>
+<p><strong>Note</strong>: We have been passing in data via the <code class="language-text">-p</code> flag in our previous examples but you can also pass in data using the <code class="language-text">--data</code> flag. </p>
+<p>Leaving an exception unhandled is not acceptable, so let’s refactor the code to return a proper HTTP response.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">    <span class="token operator">...</span>
+    mailgun<span class="token punctuation">.</span><span class="token function">messages</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>emailData<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">error<span class="token punctuation">,</span> body</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// log error response</span>
+        <span class="token comment">// console.log(error);</span>
+        <span class="token comment">// callback(error);</span>
+        <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token punctuation">{</span>
+          statusCode<span class="token operator">:</span> <span class="token number">400</span><span class="token punctuation">,</span>
+          body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            message<span class="token operator">:</span> error<span class="token punctuation">,</span>
+            input<span class="token operator">:</span> body<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span></code></pre></div>
+<p>Now, when we deploy the function and call it, we get a better response.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">curl</span> -i -X POST -d <span class="token string">'{"to_address":"junk"}'</span> https://yt9i5yniu3.execute-api.us-east-1.amazonaws.com/prod/email
+
+HTTP/1.1 <span class="token number">400</span> Bad Request
+Content-Type: application/json
+Content-Length: <span class="token number">118</span>
+<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span>.
+
+<span class="token punctuation">{</span><span class="token string">"message"</span>:<span class="token punctuation">{</span><span class="token string">"statusCode"</span>:400<span class="token punctuation">}</span>,<span class="token string">"input"</span>:<span class="token punctuation">{</span><span class="token string">"message"</span><span class="token builtin class-name">:</span><span class="token string">"'to' parameter is not a valid address. please check documentation"</span><span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre></div>
+<p>This concludes the development of the application.</p>
+<blockquote>
+<p>Code: Get the <a href="https://github.com/rupakg/postman">full source code</a> to the application project on Github.</p>
+</blockquote>
+<h2>Summary</h2>
+<p>We explored the path to creating a serverless application from scratch, starting with a boiler plate template. We then customized the code, tested the code locally, and deployed it to AWS Lambda. Finally, we accessed the public function via the HTTP endpoint, and also looked at some error conditions and use cases. At the end of it all, we created a fully functional serverless backed email service that sent out emails via the Mailgun email service provider.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/lumen/posts/2017-07-21-serverless-cron-icle-5/">← <!-- -->Serverless (Cron)icle #5 - News from the Serverless Community</a></li><li><a rel="next" href="/lumen/posts/2017-07-28-serverless-cron-icle-6/">Serverless (Cron)icle #6 - News from the Serverless Community<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/2017-07-24-anatomy-of-a-serverless-app/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-36e457a5393b79b99515.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/lumen/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/lumen/cd7d5f864fc9e15ed8adef086269b0aeff617554-c8f68cb3ade1320f5257.js" async=""></script><script src="/lumen/commons-4c36ffabef1434ec1126.js" async=""></script><script src="/lumen/app-36e457a5393b79b99515.js" async=""></script><script src="/lumen/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/lumen/framework-5fc6169171e885c3b522.js" async=""></script><script src="/lumen/webpack-runtime-c76c0c9d42bc9bf56761.js" async=""></script></body></html>

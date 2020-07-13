@@ -1,0 +1,549 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/lumen/styles.1d0daeadf0762b76da98.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/lumen/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/lumen/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/lumen/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/lumen/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/lumen/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/lumen/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/lumen/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/lumen/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/lumen/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/lumen/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/lumen/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/lumen/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/lumen/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/lumen/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/lumen/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/lumen/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/lumen/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/lumen/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/lumen/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/lumen/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/lumen/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/lumen/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/lumen/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/lumen/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/lumen/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/lumen/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/lumen/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/lumen/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/lumen/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/lumen/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/lumen/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/lumen/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/lumen/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/lumen/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/lumen/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/lumen/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/lumen/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/lumen/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/lumen/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/lumen/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/lumen/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/lumen/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/lumen/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/lumen/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/lumen/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/lumen/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/lumen/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/lumen/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/lumen/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/lumen/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/lumen/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/lumen/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/lumen/rss.xml"/><link rel="icon" href="/lumen/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/lumen/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/lumen/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/lumen/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/lumen/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/lumen/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/lumen/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/lumen/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/lumen/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/lumen/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">How to use AWS Fargate and Lambda for long-running processes in a Serverless app | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="We&#x27;ll show you how to process a video file that extracts a thumbnail in Amazon ECS using Fargate and Lambda"/><meta data-react-helmet="true" property="og:title" content="How to use AWS Fargate and Lambda for long-running processes in a Serverless app"/><meta data-react-helmet="true" property="og:description" content="We&#x27;ll show you how to process a video file that extracts a thumbnail in Amazon ECS using Fargate and Lambda"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="How to use AWS Fargate and Lambda for long-running processes in a Serverless app"/><meta data-react-helmet="true" name="twitter:description" content="We&#x27;ll show you how to process a video file that extracts a thumbnail in Amazon ECS using Fargate and Lambda"/><link as="script" rel="preload" href="/lumen/webpack-runtime-c76c0c9d42bc9bf56761.js"/><link as="script" rel="preload" href="/lumen/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/lumen/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/lumen/app-36e457a5393b79b99515.js"/><link as="script" rel="preload" href="/lumen/commons-4c36ffabef1434ec1126.js"/><link as="script" rel="preload" href="/lumen/cd7d5f864fc9e15ed8adef086269b0aeff617554-c8f68cb3ade1320f5257.js"/><link as="script" rel="preload" href="/lumen/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/lumen/page-data/posts/2018-01-11-serverless-application-for-long-running-process-fargate-lambda/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/lumen/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/lumen/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">How to use AWS Fargate and Lambda for long-running processes in a Serverless app</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">January 11, 2018</p></header><section><p>AWS dropped so many serverless announcements at re:Invent, the community is still scrambling to make sense of them all. This post is all about AWS Fargate.</p>
+<p>In this article, I will show you how to create an end-to-end serverless application that extracts thumbnails from video files. But, oh no, processing video files is a long-running process! Whatever will we do?</p>
+<p>This is where Fargate comes in.</p>
+<p><strong>TL;DR</strong> A Docker container does the processing -> The container extracts the thumbnail and uploads the image to an S3 bucket -> The container is managed by AWS Fargate. All functionality is triggered from AWS Lambda functions and contained within a serverless application written with the <a href="https://serverless.com/framework/">Serverless Framework</a>.</p>
+<p>Excited? Me too! Read on. 💥</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34815683-3c9ca24c-f680-11e7-9f23-d45bc78f3e37.png" alt="Fargate + Lambda + Serverless Framework = Bliss"></p>
+<h4>Some background &#x26; overview</h4>
+<p>With the <a href="https://docs.aws.amazon.com/lambda/latest/dg/limits.html">execution time limits</a> of the AWS Lambda platform, there are a lot of use cases involving long-running processes that are hard to implement.</p>
+<p>On the flip side, serverless computing offers benefits (like zero-administration, pay-per-execution, and auto-scaling capabilities) that are hard to ignore. AWS recently announced <a href="https://aws.amazon.com/fargate/">AWS Fargate</a> to bridge that gap.</p>
+<blockquote>
+<p>AWS Fargate is a technology that allows you to use containers as a fundamental compute primitive without having to manage the underlying compute instances.</p>
+</blockquote>
+<p>Fargate technology works on Amazon ECS &#x26; Amazon EKS, and allows users to run containers without having to manage servers or clusters.</p>
+<p>Amazon ECS and Amazon EKS have two modes or launch types: Fargate and EC2.</p>
+<p>With Fargate, all you have to do is package your application in containers, specify the CPU and memory requirements, define networking and IAM policies, and launch the application. You can define an ECS Task and call it from your Lambda function.</p>
+<p>In this article, we will look at a serverless application built using Fargate and Lambda.</p>
+<p><strong>Most importantly:</strong> I have built the application so it’s generic enough to be used as a reference template for <em>any</em> long-running processes that need to be executed as part of a serverless application. 😎</p>
+<p>Let’s dig in!</p>
+<p><strong>What we’ll cover:</strong></p>
+<ul>
+<li>Building a container image to extract thumbnails</li>
+<li>
+<p>Setting up ECS using Fargate</p>
+<ul>
+<li>Defining an ECS Fargate Task</li>
+<li>Setting up IAM roles &#x26; policies</li>
+<li>Running the task</li>
+</ul>
+</li>
+<li>
+<p>Creating a serverless application</p>
+<ul>
+<li>Configuration and settings</li>
+<li>Triggering a Lambda function to run the ECS Fargate Task</li>
+<li>Triggering a Lambda function when thumbnail is generated</li>
+</ul>
+</li>
+</ul>
+<h5>Workflow</h5>
+<p>The diagram below and the steps that follow describe the overall workflow of the the application we’re building.</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34815433-4b277d74-f67f-11e7-83a0-9ac65d630eab.png" alt="Architecture Diagram for processing video to generate thumbnail in AWS ECS using Fargate"></p>
+<ol>
+<li>Upload video to S3</li>
+<li>S3 triggers a Lambda function when the video is uploaded</li>
+<li>The Lambda function runs the ECS Fargate Task with appropriate parameters.</li>
+<li>
+<p>The ECS Fargate Task executes the Docker container:</p>
+<ul>
+<li>that processes the video file to extract thumbnail,</li>
+<li>and uploads the thumbnail image to S3</li>
+</ul>
+</li>
+<li>S3 triggers another Lambda function when the thumbnail is uploaded</li>
+<li>The Lambda function writes the url of the thumbnail to the log.</li>
+</ol>
+<p><strong>Note:</strong> If you are not interested in learning how the container image was built or how to test extracting the thumbnail locally, please skip ahead to the <a href="https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/#setting-up-ecs-using-fargate/">Setting up ECS (Fargate)</a> section. I have the Docker container <a href="https://hub.docker.com/r/rupakg/docker-ffmpeg-thumb/">rupakg/docker-ffmpeg-thumb</a> shared on Dockerhub for you to use.</p>
+<h4>Building the Container Image</h4>
+<p>We’re encapsulating the core functionality—extracting a thumbnail from a video file—in a container.</p>
+<p>We’ll be using <code class="language-text">ffmpeg</code> to manipulate the video, and the <a href="https://aws.amazon.com/cli/">AWS CLI</a> to upload the thumbnail to S3. The container image accepts parameters to customize the functionality.</p>
+<p>Let’s look at the Dockerfile and then see how we would execute it.</p>
+<h5>Dockerfile</h5>
+<p>Here is the Dockerfile:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">FROM jrottenberg/ffmpeg
+LABEL maintainer=&quot;Rupak Ganguly &lt;rupakg@gmail.com&gt;&quot;
+
+RUN apt-get update &amp;&amp; \
+    apt-get install python-dev python-pip -y &amp;&amp; \
+    apt-get clean
+
+RUN pip install awscli
+
+WORKDIR /tmp/workdir
+
+COPY copy_thumbs.sh /tmp/workdir
+
+ENTRYPOINT ffmpeg -i ${INPUT_VIDEO_FILE_URL} -ss ${POSITION_TIME_DURATION} -vframes 1 -vcodec png -an -y ${OUTPUT_THUMBS_FILE_NAME} &amp;&amp; ./copy_thumbs.sh</code></pre></div>
+<p>I use the base image <a href="https://hub.docker.com/r/jrottenberg/ffmpeg/">jrottenberg/ffmpeg</a> for <code class="language-text">ffmpeg</code> and then install the AWS CLI. Then I execute <code class="language-text">ffmpeg</code>, passing it the parameters and then executing the <code class="language-text">copy_thumbs.sh</code> script.</p>
+<p>The <code class="language-text">copy_thumbs.sh</code> script uploads the extracted thumbnail to S3. The ENTRYPOINT describes the command I used to extract a frame from the video file.</p>
+<p><strong>Note</strong>: <code class="language-text">ffmpeg</code> has many options to optimize what we’re doing and is out of this article’s scope. Check out <a href="https://www.ffmpeg.org/documentation.html">ffmpeg docs</a> for details.</p>
+<p>Now that we have looked at the Dockerfile, let’s download the latest code from the repo to our machine and build the image:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/rupakg/docker-ffmpeg-thumb.git
+
+$ docker build -t docker-ffmpeg-thumb <span class="token builtin class-name">.</span></code></pre></div>
+<p><strong>Note</strong>: Check out the <a href="https://github.com/rupakg/docker-ffmpeg-thumb">docker-ffmpeg-thumb</a> Github repo for the latest code.</p>
+<p>For your convenience, I have the Docker container <a href="https://hub.docker.com/r/rupakg/docker-ffmpeg-thumb/">rupakg/docker-ffmpeg-thumb</a> shared on Dockerhub for you to use.</p>
+<h5>Running the Container Locally</h5>
+<p>Let’s run the container image we created by passing it the required parameters:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">docker run <span class="token punctuation">\</span>
+    -e <span class="token assign-left variable">INPUT_VIDEO_FILE_URL</span><span class="token operator">=</span><span class="token string">'https://s3url/mybucket/file.mp4'</span> <span class="token punctuation">\</span>
+    -e <span class="token assign-left variable">POSITION_TIME_DURATION</span><span class="token operator">=</span><span class="token string">'00:08'</span> <span class="token punctuation">\</span>
+    -e <span class="token assign-left variable">OUTPUT_THUMBS_FILE_NAME</span><span class="token operator">=</span><span class="token string">'test.png'</span> <span class="token punctuation">\</span>
+    -e <span class="token assign-left variable">OUTPUT_S3_PATH</span><span class="token operator">=</span><span class="token string">'mybucket/myfolder'</span> <span class="token punctuation">\</span>
+    -e <span class="token assign-left variable">AWS_REGION</span><span class="token operator">=</span><span class="token string">'us-east-1'</span> <span class="token punctuation">\</span>
+    rupakg/docker-ffmpeg-thumb</code></pre></div>
+<p>The parameters are pretty intuitive. Additionally, pass in the AWS credentials in the above command, and you should have a thumbnail in the specified S3 <code class="language-text">mybucket/myfolder</code> path.</p>
+<p>With the functionality working using the container image, let’s look at using it in a ECS (Fargate) task and build it into a serverless application.</p>
+<h4>Setting up ECS using Fargate</h4>
+<p>If you have already worked with ECS, you might have some or all of these steps completed. But I’m going to walk you through the steps of setting up ECS with Fargate, assuming that you have not done it before.</p>
+<p>AWS provides a <a href="https://console.aws.amazon.com/ecs/home?region=us-east-1#/firstRun">First Run Wizard</a> that is an excellent resource to start playing with ECS using Fargate. The wizard does a few things for us, as shown below:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34711774-8b161270-f4ee-11e7-8ed7-969cd6152747.png" alt="AWS ECS Fargate First Run Wizard">
+<em>Figure 1</em>: AWS ECS Fargate First Run Wizard</p>
+<h5>Container Definition</h5>
+<p>First, we will create the container definition.</p>
+<p>Note that AWS provides us a couple of pre-defined container definitions (as shown below), but we will select the ‘custom’ option and create a new container definition from scratch.</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34711932-12f094c2-f4ef-11e7-8b29-2c7918a65736.png" alt="Container Definition">
+<em>Figure 2</em>: Container definition</p>
+<p>Click the ‘Configure’ button. In the resulting pop-up screen, fill in the ‘Container Name’ and the ‘Image’:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34714271-f6cb6a80-f4f6-11e7-9881-b9fd8c3f242e.png" alt="Configure Container">
+<em>Figure 3</em>: Configure container</p>
+<p><strong>Note</strong>: The image for the container specified by <code class="language-text">rupakg/docker-ffmpeg-thumb:latest</code> is the image that we built earlier. In this case, note that I am using the Docker Hub registry url pointing to the Docker image I built and uploaded. If you created your own image, specify that Docker image url here. You are welcome to use my Docker image as well.</p>
+<p>Next, open up the section ‘Advanced container configuration’, and in the ‘ENVIRONMENT’ section, add the following ‘Env Variables’:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">AWS_REGION - us-east-1
+INPUT_VIDEO_FILE_URL - https://s3.amazonaws.com/your-s3-bucket-name/test.mp4
+OUTPUT_S3_PATH - your-s3-bucket-name/your-thumbnail-folder-name
+OUTPUT_THUMBS_FILE_NAME	 - test.png
+POSITION_TIME_DURATION - 00:01</code></pre></div>
+<p><img src="https://user-images.githubusercontent.com/8188/34713501-7afe4136-f4f4-11e7-8bf4-75423a11c0ee.png" alt="Advanced container configuration: Environment">
+<em>Figure 4</em>: Advanced container configuration: Environment</p>
+<p>Leave the ‘NETWORK SETTINGS’ section empty.</p>
+<p>Next, in the ‘STORAGE AND LOGGING’ add the following ‘Log configuration’ key/value pairs:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">awslogs-group - /ecs/ffmpeg-thumb-task-definition
+awslogs-region - us-east-1
+awslogs-stream-prefix - ecs</code></pre></div>
+<p><img src="https://user-images.githubusercontent.com/8188/34714019-075c08ce-f4f6-11e7-8888-66050deff115.png" alt="Advanced container configuration: Storage and Logging">
+<em>Figure 5</em>: Advanced container configuration: Storage and Logging</p>
+<p>Leave the ‘RESOURCE LIMITS’ and the ‘DOCKER LABELS’ sections empty.</p>
+<p>Click the ‘Update’ button.</p>
+<h5>Task Definition</h5>
+<p>Next, we will edit the ‘Task Definition’, by clicking on the ‘Edit’ button:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34714519-b020683c-f4f7-11e7-9968-1a4bbf4b24d4.png" alt="Task definition">
+<em>Figure 6</em>: Task definition</p>
+<p>Update the ‘Task definition name’ to <code class="language-text">ffmpeg-thumb-task-definition</code>, and then click the ‘Save’ button:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34714643-13ab4020-f4f8-11e7-85d8-893c3f39319d.png" alt="Update Task definition">
+<em>Figure 7</em>: Update Task definition</p>
+<p>The updates we made above to the Container and Task definition sections are shown below:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34714881-cfcae7a6-f4f8-11e7-95ec-b71a3f2b4082.png" alt="Updated Container and Task Definition">
+<em>Figure 8</em>: Updated Container and Task definition</p>
+<h5>Service Definition</h5>
+<p>For our application we really don’t need a ‘service’, but during the service definition creation step, AWS automatically creates a ‘security group’. This is useful. So accept all the default values and click the ‘Next’ button:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34715153-a2dfa8de-f4f9-11e7-8b4b-6ced3d849af2.png" alt="Create Service">
+<em>Figure 9</em>: Create Service</p>
+<h5>Configuring the Cluster</h5>
+<p>This brings us to the last step: ‘Cluster Configuration’.</p>
+<p>Accept the default values of ‘Cluster name’ as <code class="language-text">default</code>, and note that AWS will automatically create a VPC and subnets as needed. Click the ‘Next’ button:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34715433-b0db0220-f4fa-11e7-9965-10f2e9c42f92.png" alt="Cluster Configuration">
+<em>Figure 10</em>: Cluster Configuration</p>
+<h5>Review</h5>
+<p>Let’s review what we just configured. You can see all the settings in the screenshot below:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34715973-6c43f1ba-f4fc-11e7-99c0-614f5b34a9ea.png" alt="Review">
+<em>Figure 11</em>: Review</p>
+<p>Click the ‘Create’ button to create the container definition, task definition, service and the cluster.</p>
+<p>That should display a screen with all the items showing as ‘complete’. You can then click on the ‘View Service’ button to view the service that was created:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34741644-4eec4900-f551-11e7-91e0-24173807dbc8.png" alt="Setup Complete">
+<em>Figure 12</em>: Setup Complete</p>
+<p>Now, if you go back to the ‘Task Definitions’ menu item, you will see the new task that we just created. You can click on the task, and review the settings that we added. You can also create a new revision if you choose to at a later date:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34733614-f4c608fe-f536-11e7-9c54-b698ae5954ac.png" alt="New Task">
+<em>Figure 13</em>: New Task</p>
+<p>You can take a look at the JSON version of the task definition as shown below:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34733998-3eded3b6-f538-11e7-9424-c34c7633ab63.png" alt="Task JSON">
+<em>Figure 14</em>: Task JSON</p>
+<h5>Pre-requisite Resources</h5>
+<p>To be able to run our task and support the application, we need to create a couple of resources before-hand.</p>
+<ol>
+<li>We need a S3 bucket where we will be uploading our videos for processing. The bucket in the setting <code class="language-text">&quot;bucket&quot;: &quot;&lt;your-s3-bucket-name&gt;&quot;</code> will be created automatically when we deploy our app.</li>
+<li>
+<p>We need to set an IAM Bucket Policy for the bucket to give it <code class="language-text">public</code> permission to get objects. Use the following policy and add it to the ‘Bucket Policy’ for the bucket, via the AWS S3 console:</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"Version"</span><span class="token operator">:</span> <span class="token string">"2008-10-17"</span><span class="token punctuation">,</span>
+  <span class="token property">"Statement"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"Effect"</span><span class="token operator">:</span> <span class="token string">"Allow"</span><span class="token punctuation">,</span>
+      <span class="token property">"Principal"</span><span class="token operator">:</span> <span class="token string">"*"</span><span class="token punctuation">,</span>
+      <span class="token property">"Action"</span><span class="token operator">:</span> <span class="token string">"s3:GetObject"</span><span class="token punctuation">,</span>
+      <span class="token property">"Resource"</span><span class="token operator">:</span> <span class="token string">"arn:aws:s3:::&lt;your-s3-bucket-name>/*"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+<li>Under that bucket, we need a folder where the thumbnails extracted from the video file will be uploaded. We will need to manually create a folder with the name we have in the setting <code class="language-text">&quot;thumbnails_folder&quot;: &quot;&lt;your-thumbnail-folder-name&gt;&quot;</code>.</li>
+<li>Test the above changes by uploading a file to this bucket and then accessing it by its public url from a browser. If you can view the file, you are all set.</li>
+</ol>
+<h5>IAM Roles &#x26; Policies</h5>
+<p>For our task to access the S3 bucket/folder we specified from our account, we need to give it specific permissions. Since the container is executing inside the ECS context, we can add another role that will have the specific S3 access policies.</p>
+<p>When we created our task definition, AWS created a role <code class="language-text">ecsTaskExecutionRole</code> for us which gave access to run the task. Instead of updating that role directly, we will attach a new role for S3 access.</p>
+<p>Let’s create a new role. Go to the AWS IAM Console and switch to the ‘Roles’ tab:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34742757-45c45508-f555-11e7-8cf1-1dcf88ec7e09.png" alt="ECS Task Execution Role">
+<em>Figure 15</em>: ECS Task Execution Role</p>
+<p>Click on the <code class="language-text">ecsTaskExecutionRole</code> role. On the resulting page, click on the ‘Add inline policy’ link:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34742884-ca9d7bba-f555-11e7-91e3-4116c9e80ba5.png" alt="Add inline policy">
+<em>Figure 16</em>: Add inline policy</p>
+<p>On the ‘Create Policy’ screen, click on the JSON tab. I have already created JSON fragment that encapsulates the policy we need. Paste the following JSON in the text area:</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"Statement"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"Action"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">"s3:ListBucket"</span><span class="token punctuation">,</span>
+                <span class="token string">"s3:GetBucketLocation"</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"Effect"</span><span class="token operator">:</span> <span class="token string">"Allow"</span><span class="token punctuation">,</span>
+            <span class="token property">"Resource"</span><span class="token operator">:</span> <span class="token string">"arn:aws:s3:::&lt;your-s3-bucket-name>"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"Action"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">"s3:PutObject"</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"Effect"</span><span class="token operator">:</span> <span class="token string">"Allow"</span><span class="token punctuation">,</span>
+            <span class="token property">"Resource"</span><span class="token operator">:</span> <span class="token string">"arn:aws:s3:::&lt;your-s3-bucket-name>/&lt;your-thumbnail-folder-name>/*"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"Version"</span><span class="token operator">:</span> <span class="token string">"2012-10-17"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Basically, the above policy allows our task to list our bucket and also allows to put an object into the bucket/folder path.</p>
+<p>Click the ‘Review policy’ button, and give the new role a name <code class="language-text">UploadToS3RolePolicy</code>. Click the ‘Create policy’ button to create the policy and attach it to the <code class="language-text">ecsTaskExecutionRole</code> role.</p>
+<p>You can see the resulting screen below:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34743400-9467f4ce-f557-11e7-9f1f-063554ed29a1.png" alt="Attach new role">
+<em>Figure 17</em>: Attach new role</p>
+<p>With all the pre-requisite setup completed, we can now initiate running the task we created!</p>
+<h5>Initiating the Task Execution</h5>
+<p>Now that we have a task set up, let’s run it.</p>
+<p>We will start by running the task from the AWS Console. Check the box next to the task, click on the ‘Actions’ dropdown menu, and select the ‘Run Task’ item:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34734206-fb7f4b04-f538-11e7-8744-657b5b574477.png" alt="Initiate Run Task">
+<em>Figure 18</em>: Initiate Run Task</p>
+<p>In the following screen, we need to specify some settings that are required by the task to run:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34734570-2f716be4-f53a-11e7-8d54-989a1eef8c08.png" alt="Task Run Settings">
+<em>Figure 19</em>: Task Run settings</p>
+<p>Here are a couple of things that are going on:</p>
+<ul>
+<li>Pick ‘FARGATE’ as ‘Launch type’</li>
+<li>Pick ‘default’ as ‘Cluster’</li>
+<li>Assign ‘1’ for ‘Number of tasks’</li>
+<li>For ‘Cluster VPC’, pick one with the non-internal IP i.e. 172.x.x.x</li>
+<li>Only then you will see the ‘Subnets’ dropdown populate. Pick any two</li>
+<li>Pick the default ‘Security group’ that AWS created</li>
+<li>Pick ‘ENABLED’ for ‘Auto-assign public IP’</li>
+</ul>
+<p>Leave the ‘Task Overrides’ section under ‘Advanced Options’ as-is.</p>
+<p>Note that a ‘Task Execution Role’ <code class="language-text">currentecsTaskExecutionRole</code> has been automatically created and assigned to the task. This IAM role gives permission to run/start the task.</p>
+<p>The ‘Container Overrides’ section gives us an opportunity to override any settings for the container we created. It should be populated with the settings that we added while creating the task definition.</p>
+<p>If you choose to change any of these settings, you can do so now in this section:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34739181-7bc6f45a-f549-11e7-9807-aa4d5b708a2a.png" alt="Container Overrides">
+<em>Figure 20</em>: Container Overrides</p>
+<p>Once you are satisfied with your changes, click the ‘Run Task’ button.</p>
+<h5>Running the Task</h5>
+<p>After the task is run, you can see an instance of the task being created on the resulting page:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34741859-19589662-f552-11e7-983c-5a9d9752d6f4.png" alt="Task Created">
+<em>Figure 21</em>: Task Created</p>
+<p>Let’s click on the task under the column ‘Task’. We can see the details of the task in the following screen:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34742073-f0140cae-f552-11e7-85bc-dc3ec34ed6c0.png" alt="Running Task Details">
+<em>Figure 22</em>: Running Task Details</p>
+<p>Once the ‘Last status’ field changes to ‘STOPPED’, you can switch to the ‘Logs’ tab to see the logs of the execution output:</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34742331-cade8c88-f553-11e7-9cec-82c980169c0d.png" alt="Log Output">
+<em>Figure 23</em>: Log output</p>
+<p>As you can see in the output, the container we created generated a thumbnail from the video file it was passed, and uploaded it to the S3 bucket/folder we specified.</p>
+<p><strong>Side note:</strong> you can also use the AWS CLI to run/start/stop the task.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">aws --region us-east-1 ecs run-task --task-definition ffmpeg-thumb-task-definition</code></pre></div>
+<p>Now that we have executed the task from the AWS comsole, let’s create a serverless app that will run the task based on parameters we pass along.</p>
+<p><em>This</em> is where things get cool.</p>
+<h4>Creating the App</h4>
+<p>To recap, we are trying to extract a thumbnail from a video file based on a frame position that we specify.</p>
+<p>Here is the workflow:</p>
+<ol>
+<li>Upload video to S3</li>
+<li>S3 triggers a Lambda function when the video is uploaded</li>
+<li>Get the S3 object related metadata from the event</li>
+<li>The Lambda function runs the ECS Fargate Task with appropriate parameters</li>
+<li>
+<p>The ECS Fargate Task executes the Docker container:</p>
+<ul>
+<li>that processes the video file to extract thumbnail,</li>
+<li>and uploads the thumbnail image to S3</li>
+</ul>
+</li>
+<li>S3 triggers another Lambda function when the thumbnail is uploaded</li>
+<li>The Lambda function writes the url of the thumbnail to the log</li>
+</ol>
+<p>Let’s start by creating a new serverless app using the Serverless Framework’s boilerplate template <code class="language-text">aws-nodejs</code>. We will name the app <code class="language-text">ffmpeg-video-thumb</code>.</p>
+<p>To follow along, please download or clone the code for the app <a href="https://github.com/rupakg/ffmpeg-video-thumb">ffmpeg-video-thumb</a>, and open it in an editor.</p>
+<h5>Configuration</h5>
+<p>The source code for the application is pretty generic, but you will need to supply it configuration settings that apply to your needs. Some of these configuration items include custom settings, plugins, IAM roles, and event rules for functions.</p>
+<h5>Custom Settings</h5>
+<p>We need the following settings that are defined in the <code class="language-text">custom</code> section of the <code class="language-text">serverless.yml</code> file. To make it easy, I have included a <code class="language-text">config.dev.example.json</code> file with those entries.</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"># config.dev.example.json
+<span class="token punctuation">{</span>
+  <span class="token property">"region"</span><span class="token operator">:</span> <span class="token string">"us-east-1"</span><span class="token punctuation">,</span>
+  <span class="token property">"bucket"</span><span class="token operator">:</span> <span class="token string">"&lt;your-s3-bucket-name>"</span><span class="token punctuation">,</span>
+  <span class="token property">"thumbnails_folder"</span><span class="token operator">:</span> <span class="token string">"&lt;your-thumbnail-folder-name>"</span><span class="token punctuation">,</span>
+  <span class="token property">"ecsTaskName"</span><span class="token operator">:</span> <span class="token string">"&lt;your-ecs-task-definition-name>"</span><span class="token punctuation">,</span>
+  <span class="token property">"ecsTaskVpcSubnet1"</span><span class="token operator">:</span> <span class="token string">"&lt;your-ecs-task-subnet>"</span><span class="token punctuation">,</span>
+  <span class="token property">"ecsTaskVpcSubnet2"</span><span class="token operator">:</span> <span class="token string">"&lt;your-ecs-task-subnet>"</span><span class="token punctuation">,</span>
+  <span class="token property">"clusterName"</span><span class="token operator">:</span> <span class="token string">"&lt;your-ecs-cluster-name>"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Copy the <code class="language-text">config.dev.example.json</code> to <code class="language-text">config.dev.json</code>, and then supply the values for the entries. The <code class="language-text">serverless.yml</code> loads the settings from the <code class="language-text">config.dev.json</code> at the time of deployment.</p>
+<p><strong>Note</strong>: The <code class="language-text">config.dev.json</code> has been added to <code class="language-text">.gitignore</code> file, so it will not be added to your git repo.</p>
+<h5>Plugins</h5>
+<p>There are cases, like one below, where you need the <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html">AWS CloudFormation Pseudo parameters</a> in your configuration <code class="language-text">serverless.yml</code> file.</p>
+<div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">execRoleArn</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token key atrule">"Fn::Join"</span> <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">,</span> <span class="token punctuation">[</span> <span class="token string">"arn:aws:iam::"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token key atrule">"Ref"</span> <span class="token punctuation">:</span> <span class="token string">"AWS::AccountId"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">":role/ecsTaskExecutionRole"</span> <span class="token punctuation">]</span> <span class="token punctuation">]</span> <span class="token punctuation">}</span></code></pre></div>
+<p>Luckily, there is a Serverless plugin for that!</p>
+<p>Check out the awesome <a href="https://github.com/svdgraaf/serverless-pseudo-parameters">serverless-pseudo-parameters</a> plugin written by Sander van de Graaf.</p>
+<p>You can now use <code class="language-text">#{AWS::AccountId}</code>, <code class="language-text">#{AWS::Region}</code>, etc. in any of your config strings, and this plugin replaces those values with the proper pseudo parameter Fn::Sub CloudFormation function.</p>
+<p>To install and add to the package.json, simply run:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> i serverless-pseudo-parameters --save-dev</code></pre></div>
+<p>and in the <code class="language-text">serverless.yml</code> file include it under the <code class="language-text">plugins</code> block:</p>
+<div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">plugins</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>pseudo<span class="token punctuation">-</span>parameters</code></pre></div>
+<h5>IAM Roles</h5>
+<p>To allow the Lambda functions in our serverless app to do certain actions, we need to set permissions with AWS.</p>
+<p>We need the following permissions:</p>
+<div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml">  <span class="token key atrule">iamRoleStatements</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">Effect</span><span class="token punctuation">:</span> <span class="token string">"Allow"</span>
+      <span class="token key atrule">Action</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> ecs<span class="token punctuation">:</span>RunTask
+      <span class="token key atrule">Resource</span><span class="token punctuation">:</span> <span class="token string">"*"</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">Effect</span><span class="token punctuation">:</span> Allow
+      <span class="token key atrule">Action</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> iam<span class="token punctuation">:</span>PassRole
+      <span class="token key atrule">Resource</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.execRoleArn<span class="token punctuation">}</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">Effect</span><span class="token punctuation">:</span> <span class="token string">"Allow"</span>
+      <span class="token key atrule">Action</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> s3<span class="token punctuation">:</span>GetObject
+      <span class="token key atrule">Resource</span><span class="token punctuation">:</span> <span class="token string">"arn:aws:s3:::${self:custom.bucket}/*"</span></code></pre></div>
+<p>The above IAM Role settings in the <code class="language-text">serverless.yml</code> file allows the Lambda functions to run ECS Tasks, assumes the role defined in the <code class="language-text">execRoleArn</code> setting and allows getting S3 objects from the bucket we defined.</p>
+<h5>Event Rules for Functions</h5>
+<p>We have two Lambda functions. Each of them are configured with certain rules that trigger them.</p>
+<div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml">  <span class="token key atrule">triggerOnUploadVideo</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> handler.triggerOnUploadVideo
+    <span class="token key atrule">events</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">s3</span><span class="token punctuation">:</span>
+          <span class="token key atrule">bucket</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.bucket<span class="token punctuation">}</span>
+          <span class="token key atrule">event</span><span class="token punctuation">:</span> s3<span class="token punctuation">:</span>ObjectCreated<span class="token punctuation">:</span>*
+          <span class="token key atrule">rules</span><span class="token punctuation">:</span>
+            <span class="token punctuation">-</span> <span class="token key atrule">suffix</span><span class="token punctuation">:</span> .mp4</code></pre></div>
+<p>The above configuration sets a rule for function <code class="language-text">triggerOnUploadVideo</code> to be triggered based on an event from S3 when a object with <code class="language-text">suffix</code> ‘.mp4’ is created in the <code class="language-text">bucket</code> we specified.</p>
+<div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml">  <span class="token key atrule">triggerOnThumbnailCreation</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> handler.triggerOnThumbnailCreation
+    <span class="token key atrule">events</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">s3</span><span class="token punctuation">:</span>
+          <span class="token key atrule">bucket</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.bucket<span class="token punctuation">}</span>
+          <span class="token key atrule">event</span><span class="token punctuation">:</span> s3<span class="token punctuation">:</span>ObjectCreated<span class="token punctuation">:</span>*
+          <span class="token key atrule">rules</span><span class="token punctuation">:</span>
+            <span class="token punctuation">-</span> <span class="token key atrule">prefix</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.thumbnails_folder<span class="token punctuation">}</span>/
+            <span class="token punctuation">-</span> <span class="token key atrule">suffix</span><span class="token punctuation">:</span> .png</code></pre></div>
+<p>This configuration sets a rule for function <code class="language-text">triggerOnThumbnailCreation</code> to be triggered based on an event from S3 when a object with <code class="language-text">suffix</code> ‘.png’ is created in the <code class="language-text">thumbnails_folder</code> we specified.</p>
+<h5>Application Code</h5>
+<p>We looked at pre-requisites and then some configuration needed by our serverless application.</p>
+<p>Now let’s look at the function code that implements the features we need.</p>
+<h5>Lambda Function to Process Video</h5>
+<p>The Lambda function <code class="language-text">triggerOnUploadVideo</code> is responsible for processing the video. It runs an ECS Task using Fargate, passing along appropriate parameters.</p>
+<p>This function is triggered when a video file with the <code class="language-text">.mp4</code> extension is uploaded to the specified S3 bucket.</p>
+<p>Let’s take a quick look at the code at <code class="language-text">handler.js</code>:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span><span class="token function-variable function">triggerOnUploadVideo</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> context<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">const</span> bucket <span class="token operator">=</span> event<span class="token punctuation">.</span>Records<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>s3<span class="token punctuation">.</span>bucket<span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> key <span class="token operator">=</span> event<span class="token punctuation">.</span>Records<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>s3<span class="token punctuation">.</span>object<span class="token punctuation">.</span>key<span class="token punctuation">;</span>
+  <span class="token operator">...</span>
+  <span class="token keyword">const</span> s3_video_url <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://s3.amazonaws.com/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>bucket<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> thumbnail_file <span class="token operator">=</span> key<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> key<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.png'</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> frame_pos <span class="token operator">=</span> key<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>key<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> key<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">'-'</span><span class="token punctuation">,</span><span class="token string">':'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">...</span>
+  <span class="token function">runThumbnailGenerateTask</span><span class="token punctuation">(</span>s3_video_url<span class="token punctuation">,</span> thumbnail_file<span class="token punctuation">,</span> frame_pos<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>When the function is triggered by an S3 event, metadata about the bucket and the key for the object is received. I use that data to populate the parameters that the <code class="language-text">runThumbnailGenerateTask</code> function needs.</p>
+<p><strong>Note</strong>: I do a small hack to name the video file so that the position for the frame we want to extract as a thumbnail is part of the filename. So a file named test_00-10.mp4 will assume the frame position to be 00:10.</p>
+<p>The code for the function <code class="language-text">runThumbnailGenerateTask</code> is below:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">var runThumbnailGenerateTask = (s3_video_url, thumbnail_file, frame_pos) =&gt; {
+
+  // run an ECS Fargate task
+  const params = {
+    cluster: `${ECS_CLUSTER_NAME}`,
+    launchType: &#39;FARGATE&#39;,
+    taskDefinition: `${ECS_TASK_DEFINITION}`,
+    ...
+    overrides: {
+      containerOverrides: [
+        {
+          name: &#39;ffmpeg-thumb&#39;,
+          environment: [
+            {
+              name: &#39;INPUT_VIDEO_FILE_URL&#39;,
+              value: `${s3_video_url}`
+            },
+    ...
+  ecsApi.runECSTask(params);
+}</code></pre></div>
+<p>Most of the function code is creating the <code class="language-text">params</code> json structure that is passed to the helper function <code class="language-text">ecsApi.runECSTask</code> to execute the ECS task using Fargate on AWS.</p>
+<p>You can customize any of these parameters via configuration. The <code class="language-text">containerOverrides</code> array has custom values for the environment vars we setup for our container image.</p>
+<h5>Lambda Function to Notify Thumbnail Creation</h5>
+<p>The Lambda function <code class="language-text">triggerOnThumbnailCreation</code> is triggered when a ‘.png’ file is uploaded to S3. It prints out the name of the thumbnail file into the logs.</p>
+<h4>Deploying the App</h4>
+<p>Now that we looked at the code, let’s deploy and run the application!</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ sls deploy
+
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+AWS Pseudo Parameters
+...
+Serverless: Stack update finished...
+...
+endpoints:
+  None
+functions:
+  triggerOnUploadVideo: rg-video-to-thumbnail-dev-triggerOnUploadVideo
+  triggerOnThumbnailCreation: rg-video-to-thumbnail-dev-triggerOnThumbnailCreation</code></pre></div>
+<p>The app is deployed. Let’s use it.</p>
+<p>Upload an .mp4 video file in the AWS S3 bucket you configured. It has to be named something like <code class="language-text">test_00-10.mp4</code>, where the <code class="language-text">00-10</code> is the frame position of your thumbnail.</p>
+<h5>Running the App</h5>
+<p>Open up two terminal windows and let’s tail the logs of our two functions.</p>
+<p>Here is what we see for the <code class="language-text">triggerOnUploadVideo</code> function. I will break the output up into sections and explain.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ sls logs -f triggerOnUploadVideo -t
+
+START RequestId: b602b28e-xxxx Version: $LATEST
+
+2017-12-30 03:37:47.318 (-05:00)	b602b28e-xxxx
+{
+  &quot;Records&quot;: [{
+    &quot;eventVersion&quot;: &quot;2.0&quot;,
+    &quot;eventSource&quot;: &quot;aws:s3&quot;,
+    &quot;awsRegion&quot;: &quot;us-east-1&quot;,
+    &quot;eventTime&quot;: &quot;2017-12-30T08:37:46.526Z&quot;,
+    &quot;eventName&quot;: &quot;ObjectCreated:CompleteMultipartUpload&quot;,
+    ...
+    &quot;s3&quot;: {
+      ...
+      &quot;bucket&quot;: {
+        &quot;name&quot;: &quot;my-bucket&quot;,
+        ...
+        &quot;arn&quot;: &quot;arn:aws:s3:::my-bucket&quot;
+      },
+      &quot;object&quot;: {
+        &quot;key&quot;: &quot;bunny_00-03.mp4&quot;,
+        &quot;size&quot;: 26162774,
+        ...
+      }
+    }
+  }]
+}
+
+2017-12-30 03:37:47.318 (-05:00)	b602b28e-xxxx	A new file &#39;test_00-08.mp4&#39; was uploaded to &#39;my-bucket&#39; for processing.
+2017-12-30 03:37:47.319 (-05:00)	b602b28e-xxxx	Processing file &#39;https://s3.amazonaws.com/my-bucket/bunny_00-03.mp4&#39; to extract frame from position &#39;00:08&#39; to generate thumbnail &#39;test.png&#39;.</code></pre></div>
+<p>Above, you can see that the function was triggered. Then the <code class="language-text">event</code> JSON was written out, and the two log messages with the metadata for processing the video file.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">2017-12-30 03:37:48.590 (-05:00)	b602b28e-xxxx	ECS Task ffmpeg-thumb-task-definition started:
+[{
+  &quot;taskArn&quot;: &quot;arn:aws:ecs:us-east-1:XXXXXXXXXXXXXXXX:task/914cda86-XXXXXXXXXXXXXXXX&quot;,
+  &quot;clusterArn&quot;: &quot;arn:aws:ecs:us-east-1:XXXXXXXXXXXXXXXX:cluster/my-cluster&quot;,
+  &quot;taskDefinitionArn&quot;: &quot;arn:aws:ecs:us-east-1:XXXXXXXXXXXXXXXX:task-definition/ffmpeg-thumb-task-definition:10&quot;,
+  &quot;overrides&quot;: {
+    &quot;containerOverrides&quot;: [{
+      &quot;name&quot;: &quot;ffmpeg-thumb&quot;,
+      &quot;environment&quot;: [{
+        &quot;name&quot;: &quot;INPUT_VIDEO_FILE_URL&quot;,
+        &quot;value&quot;: &quot;https://s3.amazonaws.com/my-bucket/bunny_00-03.mp4&quot;
+      }, {
+        &quot;name&quot;: &quot;OUTPUT_THUMBS_FILE_NAME&quot;,
+        &quot;value&quot;: &quot;bunny.png&quot;
+      }, {
+        &quot;name&quot;: &quot;POSITION_TIME_DURATION&quot;,
+        &quot;value&quot;: &quot;00:03&quot;
+      }, {
+        &quot;name&quot;: &quot;OUTPUT_S3_PATH&quot;,
+        &quot;value&quot;: &quot;my-bucket/my-folder&quot;
+      }, {
+        &quot;name&quot;: &quot;AWS_REGION&quot;,
+        &quot;value&quot;: &quot;us-east-1&quot;
+      }]
+    }]
+  },
+  &quot;lastStatus&quot;: &quot;PROVISIONING&quot;,
+  &quot;desiredStatus&quot;: &quot;RUNNING&quot;,
+  &quot;cpu&quot;: &quot;256&quot;,
+  &quot;memory&quot;: &quot;512&quot;,
+  &quot;containers&quot;: [{
+    &quot;containerArn&quot;: &quot;arn:aws:ecs:us-east-1:XXXXXXXXXXXXXXXX:container/533d0f19-69f7-XXXXXXXXXXXXXXXXX&quot;,
+    &quot;taskArn&quot;: &quot;arn:aws:ecs:us-east-1:XXXXXXXXXXXXXXXX:task/914cda86-XXXXXXXXXXXXXXXX&quot;,
+    &quot;name&quot;: &quot;ffmpeg-thumb&quot;,
+    &quot;lastStatus&quot;: &quot;PENDING&quot;,
+    &quot;networkInterfaces&quot;: []
+  }],
+  &quot;version&quot;: 1,
+  &quot;createdAt&quot;: &quot;2017-12-30T08:37:48.573Z&quot;,
+  &quot;group&quot;: &quot;family:ffmpeg-thumb-task-definition&quot;,
+  &quot;launchType&quot;: &quot;FARGATE&quot;,
+  &quot;platformVersion&quot;: &quot;1.0.0&quot;,
+  &quot;attachments&quot;: [{
+    &quot;id&quot;: &quot;XXXXXXXXXXXXXXXXXX&quot;,
+    &quot;type&quot;: &quot;ElasticNetworkInterface&quot;,
+    &quot;status&quot;: &quot;PRECREATED&quot;,
+    &quot;details&quot;: [{
+      &quot;name&quot;: &quot;subnetId&quot;,
+      &quot;value&quot;: &quot;subnet-XXXXXXXX&quot;
+    }]
+  }]
+}]
+
+END RequestId: b602b28e-ed3c-11e7-aeb6-b7f8f0abc2f3
+REPORT RequestId: b602b28e-ed3c-11e7-aeb6-b7f8f0abc2f3
+
+	Duration: 1277.13 ms	Billed Duration: 1300 ms 	Memory Size: 1024 MB	Max Memory Used: 35 MB</code></pre></div>
+<p>Here we see that soon after the ECS task is called by the function, the ECS task is run. You can see the data structure for the task that is passed.</p>
+<p>Since the ECS task goes off in an async fashion, as far as the Lambda function is concerned—it has ended.</p>
+<p>Let’s tail the logs for the <code class="language-text">triggerOnThumbnailCreation</code> function and wait for the thumbnail to be generated. In a few moments, the thumbnail is generated and the logs shows the message:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ sls logs -f triggerOnThumbnailCreation -t
+
+START RequestId: da7f7017-xxxx Version: $LATEST
+
+2018-01-04 03:25:43.039 (-05:00)	da7f7017-xxxx
+{
+  &quot;Records&quot;: [{
+    ...
+    &quot;s3&quot;: {
+      ...
+      &quot;bucket&quot;: {
+        &quot;name&quot;: &quot;my-bucket&quot;,
+        ...
+        &quot;arn&quot;: &quot;arn:aws:s3:::my-bucket&quot;
+      },
+      &quot;object&quot;: {
+        &quot;key&quot;: &quot;my-folder/bunny.png&quot;,
+        &quot;size&quot;: 1830681,
+        ...
+      }
+    }
+  }]
+}
+
+2018-01-04 03:25:43.040 (-05:00)	da7f7017-xxxx	A new thumbnail file was generated at &#39;https://s3.amazonaws.com/my-bucket/my-folder/bunny.png&#39;.
+
+END RequestId: da7f7017-xxxx
+REPORT RequestId: da7f7017-xxxx
+
+	Duration: 3.08 ms	Billed Duration: 100 ms 	Memory Size: 1024 MB	Max Memory Used: 33 MB</code></pre></div>
+<p>At this point, you can point your browser at the url printed in your logs and view the thumbnail.</p>
+<h4>Cost</h4>
+<p>I was curious what kind of cost I incurred while I was writing the article. I tested, created many tasks, and executed them many times over a reasonably long time scale.</p>
+<p>Since it only charged me when the ECS tasks and Lambda functions were executed, the cost incurred is negligible.</p>
+<p><strong>Again, reminding us why serverless is the way to go…</strong> ⚡️</p>
+<p><img src="https://user-images.githubusercontent.com/8188/34743576-2c27102e-f558-11e7-82b3-e6da8ead705f.png" alt="Cost Analysis"></p>
+<h4>Extending the App</h4>
+<p>We used a simple hack to pass the frame position for the input video file, but in real life we might need more detailed data for processing our file.</p>
+<p>In that case, a solution that uses AWS Kinesis to store metadata for the video, while S3 is used only for storage purposes, could be a viable option.</p>
+<h4>Summary</h4>
+<p>We looked at a possible solution to execute long-running processes in ECS using Fargate, but with tight integration with AWS Lambda. We built a Docker container to encapsulate the long-running process.</p>
+<p>We set up ECS using Fargate and created an ECS task to execute our container. We tested the functionality of extracting a thumbnail from a video file. Even better, we built and deployed a serverless application from scratch, written with the Serverless Framework.</p>
+<p>I know the article is a long one (to be honest it threw me for a loop just to write it!), but I wanted to capture what it takes to build such an application end-to-end.</p>
+<p>I’d love to hear from you about other use cases you solved with the reference app we built, or any you have in mind.</p>
+<p>Any questions or feedback, please leave it below!</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/lumen/posts/2018-01-09-from-chef-to-serverless-developer-in-4-years/">← <!-- -->From chef to Serverless developer in 4 years</a></li><li><a rel="next" href="/lumen/posts/2018-01-15-serverless-cloudtrail-cloudwatch-events/">How to monitor AWS account activity with Cloudtrail, Cloudwatch Events and Serverless<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/2018-01-11-serverless-application-for-long-running-process-fargate-lambda/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-36e457a5393b79b99515.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/lumen/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/lumen/cd7d5f864fc9e15ed8adef086269b0aeff617554-c8f68cb3ade1320f5257.js" async=""></script><script src="/lumen/commons-4c36ffabef1434ec1126.js" async=""></script><script src="/lumen/app-36e457a5393b79b99515.js" async=""></script><script src="/lumen/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/lumen/framework-5fc6169171e885c3b522.js" async=""></script><script src="/lumen/webpack-runtime-c76c0c9d42bc9bf56761.js" async=""></script></body></html>

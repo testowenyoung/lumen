@@ -1,0 +1,421 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/lumen/styles.1d0daeadf0762b76da98.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/lumen/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/lumen/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/lumen/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/lumen/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/lumen/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/lumen/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/lumen/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/lumen/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/lumen/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/lumen/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/lumen/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/lumen/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/lumen/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/lumen/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/lumen/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/lumen/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/lumen/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/lumen/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/lumen/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/lumen/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/lumen/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/lumen/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/lumen/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/lumen/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/lumen/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/lumen/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/lumen/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/lumen/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/lumen/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/lumen/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/lumen/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/lumen/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/lumen/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/lumen/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/lumen/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/lumen/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/lumen/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/lumen/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/lumen/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/lumen/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/lumen/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/lumen/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/lumen/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/lumen/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/lumen/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/lumen/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/lumen/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/lumen/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/lumen/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/lumen/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/lumen/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/lumen/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/lumen/rss.xml"/><link rel="icon" href="/lumen/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/lumen/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/lumen/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/lumen/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/lumen/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/lumen/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/lumen/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/lumen/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/lumen/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/lumen/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Build a Python REST API with Serverless, Lambda, and DynamoDB | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="Deploy a Serverless REST API in minutes using the popular Flask web framework"/><meta data-react-helmet="true" property="og:title" content="Build a Python REST API with Serverless, Lambda, and DynamoDB"/><meta data-react-helmet="true" property="og:description" content="Deploy a Serverless REST API in minutes using the popular Flask web framework"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Build a Python REST API with Serverless, Lambda, and DynamoDB"/><meta data-react-helmet="true" name="twitter:description" content="Deploy a Serverless REST API in minutes using the popular Flask web framework"/><link as="script" rel="preload" href="/lumen/webpack-runtime-c76c0c9d42bc9bf56761.js"/><link as="script" rel="preload" href="/lumen/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/lumen/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/lumen/app-36e457a5393b79b99515.js"/><link as="script" rel="preload" href="/lumen/commons-4c36ffabef1434ec1126.js"/><link as="script" rel="preload" href="/lumen/cd7d5f864fc9e15ed8adef086269b0aeff617554-c8f68cb3ade1320f5257.js"/><link as="script" rel="preload" href="/lumen/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/lumen/page-data/posts/2017-11-15-flask-python-rest-api-serverless-lambda-dynamodb/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/lumen/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/lumen/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Build a Python REST API with Serverless, Lambda, and DynamoDB</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">November 16, 2017</p></header><section><p>Your existing web framework tooling can work seamlessly with the <a href="https://serverless.com/framework/">Serverless Framework</a>. Let’s go over how to use the Python web framework <a href="http://flask.pocoo.org/">Flask</a> to deploy a Serverless REST API.</p>
+<p>In this walk-through, we will:</p>
+<ul>
+<li>Deploy a simple API endpoint</li>
+<li>Add a DynamoDB table and two endpoints to create and retrieve a User object</li>
+<li>Set up path-specific routing for more granular metrics and monitoring</li>
+<li>Configure your environment for local development for a faster development experience.</li>
+</ul>
+<p>If you already have a Flask application that you want to convert to Serverless, skip to the <a href="#converting-an-existing-flask-application">Converting an existing Flask application</a> section below.</p>
+<p>If you want to skip the walkthrough and just get started with a fully-configured template, check out the <a href="#using-the-quick-start-template">Using the Quick Start Template</a> section below.</p>
+<h4>Getting Started</h4>
+<p>To get started, you’ll need the <a href="https://serverless.com/framework/docs/providers/aws/guide/quick-start/">Serverless Framework</a> installed. You’ll also need your environment configured with <a href="https://serverless.com/framework/docs/providers/aws/guide/credentials/">AWS credentials</a>.</p>
+<h4>Creating and deploying a single endpoint</h4>
+<p>Let’s start by deploying a single endpoint.</p>
+<p>First, create a new directory with a <code class="language-text">package.json</code> file:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">mkdir</span> my-flask-application <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> my-flask-application
+$ <span class="token function">npm</span> init -f</code></pre></div>
+<p>Then, install a few dependencies. We’re going to use the <a href="https://github.com/logandk/serverless-wsgi"><code class="language-text">serverless-wsgi</code></a> plugin for negotiating the API Gateway event type into the WSGI format that Flask expects. We’ll also use the <a href="https://github.com/UnitedIncome/serverless-python-requirements"><code class="language-text">serverless-python-requirements</code></a> plugin for handling our Python packages on deployment.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> --save-dev serverless-wsgi serverless-python-requirements</code></pre></div>
+<blockquote>
+<p>If you want a deeper dive on the <code class="language-text">serverless-python-requirements</code> plugin, check out our previous post on <a href="https://serverless.com/blog/serverless-python-packaging/">handling Python packaging with Serverless</a>.</p>
+</blockquote>
+<p>With our libraries installed, let’s write our Flask application. Create a file <code class="language-text">app.py</code> with the following contents:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># app.py</span>
+
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">"Hello World!"</span></code></pre></div>
+<p>This is a very simple application that returns <code class="language-text">&quot;Hello World!&quot;</code> when a request comes in on the root path <code class="language-text">/</code>. It’s the <a href="http://flask.pocoo.org/">example application shown on Flask’s landing page</a> with no modifications.</p>
+<p>To get this application deployed, create a <code class="language-text">serverless.yml</code> in the working directory:</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token key atrule">service</span><span class="token punctuation">:</span> serverless<span class="token punctuation">-</span>flask
+
+<span class="token key atrule">plugins</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>python<span class="token punctuation">-</span>requirements
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>wsgi
+
+<span class="token key atrule">custom</span><span class="token punctuation">:</span>
+  <span class="token key atrule">wsgi</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> app.app
+    <span class="token key atrule">packRequirements</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">pythonRequirements</span><span class="token punctuation">:</span>
+    <span class="token key atrule">dockerizePip</span><span class="token punctuation">:</span> non<span class="token punctuation">-</span>linux
+
+<span class="token key atrule">provider</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> aws
+  <span class="token key atrule">runtime</span><span class="token punctuation">:</span> python3.6
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> dev
+  <span class="token key atrule">region</span><span class="token punctuation">:</span> us<span class="token punctuation">-</span>east<span class="token punctuation">-</span><span class="token number">1</span>
+
+<span class="token key atrule">functions</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> wsgi.handler
+    <span class="token key atrule">events</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> ANY /
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> <span class="token string">'ANY {proxy+}'</span></code></pre></div>
+<p><em>Note: a previous version of this post set <code class="language-text">dockerizePip: true</code> instead of <code class="language-text">dockerizePip: non-linux</code>. You’ll need <code class="language-text">serverless-python-requirements</code> v3.0.5 or higher for this option.</em></p>
+<p>This is a pretty basic configuration. We’ve created one function, <code class="language-text">app</code>. The handler is <code class="language-text">handler</code> function from the <code class="language-text">wsgi</code> module. Note that this module will be added to our deployment package by the <code class="language-text">serverless-wsgi</code> plugin. We configure our application’s entry point in the <code class="language-text">custom</code> block under the <code class="language-text">wsgi</code> section. We declare that our app’s entrypoint is <code class="language-text">app.app</code>, which means the <code class="language-text">app</code> object in the <code class="language-text">app.py</code> module.</p>
+<p>For our function’s <code class="language-text">events</code> configuration, we’ve used a very broad path matching so that all requests on this domain are routed to this function. All of the HTTP routing logic will be done inside the Flask application.</p>
+<p>The last thing we need to do is handle our Python packages. The <code class="language-text">serverless-python-requirements</code> plugin looks for a <code class="language-text">requirements.txt</code> file in our working directory and installs them into our deployment package. Let’s build that <code class="language-text">requirements.txt</code> file.</p>
+<p>First, create a virtual environment and activate it. I’m using Python3 in my <code class="language-text">serverless.yml</code>, so I’m specifying that here as well:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ virtualenv venv --python<span class="token operator">=</span>python3
+$ <span class="token builtin class-name">source</span> venv/bin/activate</code></pre></div>
+<blockquote>
+<p>If you need a walkthrough on using Python virtual environments, check out <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv">Kenneth Reitz’s walkthrough</a>.</p>
+</blockquote>
+<p>Then, install the <code class="language-text">Flask</code> package with <code class="language-text">pip</code>, and save your dependencies in <code class="language-text">requirements.txt</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token punctuation">(</span>venv<span class="token punctuation">)</span> $ pip <span class="token function">install</span> flask
+<span class="token punctuation">(</span>venv<span class="token punctuation">)</span> $ pip freeze <span class="token operator">></span> requirements.txt</code></pre></div>
+<p>Now, deploy your function:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls deploy
+<span class="token punctuation">..</span>. snip <span class="token punctuation">..</span>.
+Service Information
+service: serverless-flask
+stage: dev
+region: us-east-1
+stack: serverless-flask-dev
+api keys:
+  None
+endpoints:
+  ANY - https://bl4r0gjjv5.execute-api.us-east-1.amazonaws.com/dev
+  ANY - https://bl4r0gjjv5.execute-api.us-east-1.amazonaws.com/dev/<span class="token punctuation">{</span>proxy+<span class="token punctuation">}</span>
+functions:
+  app: serverless-flask-dev-app</code></pre></div>
+<p>After a minute, the console will show your <code class="language-text">endpoints</code> in the <code class="language-text">Service Information</code> section. Navigate to that route in your browser:</p>
+<img width="783" alt="Flask Hello World" src="https://user-images.githubusercontent.com/6509926/32240372-2ccf439c-be3b-11e7-99ee-00e5b78b1e7d.png">
+<p>You did it—a real, live application on the Internet!</p>
+<h4>Adding a DynamoDB table with REST-like endpoints</h4>
+<p>Doing a “Hello World!” is fun, but your application will need to persist some sort of state to be useful. Let’s add a <a href="https://aws.amazon.com/dynamodb/">DynamoDB table</a> as our backing store.</p>
+<p>For this simple example, let’s say we’re storing Users in a database. We want to store them by <code class="language-text">userId</code>, which is a unique identifier for a particular user.</p>
+<p>First, we’ll need to configure our <code class="language-text">serverless.yml</code> to provision the table. This involves three parts:</p>
+<ol>
+<li>Provisioning the table in the <a href="https://serverless.com/framework/docs/providers/aws/guide/resources/"><code class="language-text">resources</code></a> section;</li>
+<li>Adding the proper <a href="https://serverless.com/framework/docs/providers/aws/guide/iam/">IAM permissions</a>; and</li>
+<li>Passing the table name as an <a href="https://serverless.com/framework/docs/providers/aws/guide/functions/#environment-variables">environment variable</a> so our functions can use it.</li>
+</ol>
+<p>Change your <code class="language-text">serverless.yml</code> to look as follows:</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token key atrule">service</span><span class="token punctuation">:</span> serverless<span class="token punctuation">-</span>flask
+
+<span class="token key atrule">plugins</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>python<span class="token punctuation">-</span>requirements
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>wsgi
+
+<span class="token key atrule">custom</span><span class="token punctuation">:</span>
+  <span class="token key atrule">tableName</span><span class="token punctuation">:</span> <span class="token string">'users-table-${self:provider.stage}'</span>
+  <span class="token key atrule">wsgi</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> app.app
+    <span class="token key atrule">packRequirements</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">pythonRequirements</span><span class="token punctuation">:</span>
+    <span class="token key atrule">dockerizePip</span><span class="token punctuation">:</span> non<span class="token punctuation">-</span>linux
+
+<span class="token key atrule">provider</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> aws
+  <span class="token key atrule">runtime</span><span class="token punctuation">:</span> python3.6
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> dev
+  <span class="token key atrule">region</span><span class="token punctuation">:</span> us<span class="token punctuation">-</span>east<span class="token punctuation">-</span><span class="token number">1</span>
+  <span class="token key atrule">iamRoleStatements</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">Effect</span><span class="token punctuation">:</span> Allow
+      <span class="token key atrule">Action</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> dynamodb<span class="token punctuation">:</span>Query
+        <span class="token punctuation">-</span> dynamodb<span class="token punctuation">:</span>Scan
+        <span class="token punctuation">-</span> dynamodb<span class="token punctuation">:</span>GetItem
+        <span class="token punctuation">-</span> dynamodb<span class="token punctuation">:</span>PutItem
+        <span class="token punctuation">-</span> dynamodb<span class="token punctuation">:</span>UpdateItem
+        <span class="token punctuation">-</span> dynamodb<span class="token punctuation">:</span>DeleteItem
+      <span class="token key atrule">Resource</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token punctuation">{</span> <span class="token key atrule">"Fn::GetAtt"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"UsersDynamoDBTable"</span><span class="token punctuation">,</span> <span class="token string">"Arn"</span> <span class="token punctuation">]</span> <span class="token punctuation">}</span>
+  <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+    <span class="token key atrule">USERS_TABLE</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.tableName<span class="token punctuation">}</span>
+
+<span class="token key atrule">functions</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> wsgi.handler
+    <span class="token key atrule">events</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> ANY /
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> <span class="token string">'ANY {proxy+}'</span>
+
+<span class="token key atrule">resources</span><span class="token punctuation">:</span>
+  <span class="token key atrule">Resources</span><span class="token punctuation">:</span>
+    <span class="token key atrule">UsersDynamoDBTable</span><span class="token punctuation">:</span>
+      <span class="token key atrule">Type</span><span class="token punctuation">:</span> <span class="token string">'AWS::DynamoDB::Table'</span>
+      <span class="token key atrule">Properties</span><span class="token punctuation">:</span>
+        <span class="token key atrule">AttributeDefinitions</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span>
+            <span class="token key atrule">AttributeName</span><span class="token punctuation">:</span> userId
+            <span class="token key atrule">AttributeType</span><span class="token punctuation">:</span> S
+        <span class="token key atrule">KeySchema</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span>
+            <span class="token key atrule">AttributeName</span><span class="token punctuation">:</span> userId
+            <span class="token key atrule">KeyType</span><span class="token punctuation">:</span> HASH
+        <span class="token key atrule">ProvisionedThroughput</span><span class="token punctuation">:</span>
+          <span class="token key atrule">ReadCapacityUnits</span><span class="token punctuation">:</span> <span class="token number">1</span>
+          <span class="token key atrule">WriteCapacityUnits</span><span class="token punctuation">:</span> <span class="token number">1</span>
+        <span class="token key atrule">TableName</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>self<span class="token punctuation">:</span>custom.tableName<span class="token punctuation">}</span></code></pre></div>
+<p>We provisioned the table in the <code class="language-text">resources</code> section using CloudFormation syntax. We also added IAM permissions for our functions under the <code class="language-text">iamRoleStatements</code> portion of the <code class="language-text">provider</code> block. Finally, we passed the table name as the environment variable <code class="language-text">USERS_TABLE</code> in the <code class="language-text">environment</code> portion of the <code class="language-text">provider</code> block.</p>
+<p>Now, let’s update our application to use the table. We’ll implement two endpoints: <code class="language-text">POST /users</code> to create a new user, and <code class="language-text">GET /users/{userId}</code> to get information on a particular user.</p>
+<p>Update your <code class="language-text">app.py</code> as follows:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># app.py</span>
+
+<span class="token keyword">import</span> os
+
+<span class="token keyword">import</span> boto3
+
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span> jsonify<span class="token punctuation">,</span> request
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+USERS_TABLE <span class="token operator">=</span> os<span class="token punctuation">.</span>environ<span class="token punctuation">[</span><span class="token string">'USERS_TABLE'</span><span class="token punctuation">]</span>
+client <span class="token operator">=</span> boto3<span class="token punctuation">.</span>client<span class="token punctuation">(</span><span class="token string">'dynamodb'</span><span class="token punctuation">)</span>
+
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">"Hello World!"</span>
+
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/users/&lt;string:user_id>"</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">get_user</span><span class="token punctuation">(</span>user_id<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    resp <span class="token operator">=</span> client<span class="token punctuation">.</span>get_item<span class="token punctuation">(</span>
+        TableName<span class="token operator">=</span>USERS_TABLE<span class="token punctuation">,</span>
+        Key<span class="token operator">=</span><span class="token punctuation">{</span>
+            <span class="token string">'userId'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">'S'</span><span class="token punctuation">:</span> user_id <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">)</span>
+    item <span class="token operator">=</span> resp<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'Item'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token keyword">not</span> item<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'error'</span><span class="token punctuation">:</span> <span class="token string">'User does not exist'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">404</span>
+
+    <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token string">'userId'</span><span class="token punctuation">:</span> item<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'userId'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'S'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token string">'name'</span><span class="token punctuation">:</span> item<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'S'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/users"</span><span class="token punctuation">,</span> methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"POST"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">create_user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    user_id <span class="token operator">=</span> request<span class="token punctuation">.</span>json<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'userId'</span><span class="token punctuation">)</span>
+    name <span class="token operator">=</span> request<span class="token punctuation">.</span>json<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token keyword">not</span> user_id <span class="token keyword">or</span> <span class="token keyword">not</span> name<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'error'</span><span class="token punctuation">:</span> <span class="token string">'Please provide userId and name'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">400</span>
+
+    resp <span class="token operator">=</span> client<span class="token punctuation">.</span>put_item<span class="token punctuation">(</span>
+        TableName<span class="token operator">=</span>USERS_TABLE<span class="token punctuation">,</span>
+        Item<span class="token operator">=</span><span class="token punctuation">{</span>
+            <span class="token string">'userId'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'S'</span><span class="token punctuation">:</span> user_id <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'S'</span><span class="token punctuation">:</span> name <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token string">'userId'</span><span class="token punctuation">:</span> user_id<span class="token punctuation">,</span>
+        <span class="token string">'name'</span><span class="token punctuation">:</span> name
+    <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<p>In addition to base “Hello World” endpoint, we now have two new endpoints:</p>
+<ul>
+<li><code class="language-text">GET /users/:userId</code> for getting a User</li>
+<li><code class="language-text">POST /users</code> for creating a new User</li>
+</ul>
+<p>We’ve added a <code class="language-text">boto3</code> dependency, so let’s install that into our virtual environment and update our requirements in <code class="language-text">requirements.txt</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ pip <span class="token function">install</span> boto3
+$ pip freeze <span class="token operator">></span> requirements.txt</code></pre></div>
+<p>Let’s deploy the service and test it out!</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls deploy</code></pre></div>
+<p>We’ll use <code class="language-text">curl</code> for these examples. Set the <code class="language-text">BASE_DOMAIN</code> variable to your unique domain and base path so it’s easier to reuse:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">BASE_DOMAIN</span><span class="token operator">=</span>https://bl4r0gjjv5.execute-api.us-east-1.amazonaws.com/dev</code></pre></div>
+<p>Then, let’s create a user:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">curl</span> -H <span class="token string">"Content-Type: application/json"</span> -X POST <span class="token variable">${BASE_DOMAIN}</span>/users -d <span class="token string">'{"userId": "alexdebrie1", "name": "Alex DeBrie"}'</span>
+<span class="token punctuation">{</span>
+  <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"Alex DeBrie"</span>,
+  <span class="token string">"userId"</span><span class="token builtin class-name">:</span> <span class="token string">"alexdebrie1"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Nice—we’ve created a new user! Now, let’s retrieve the user with the GET /users/:userId` endpoint:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">curl</span> -H <span class="token string">"Content-Type: application/json"</span> -X GET <span class="token variable">${BASE_DOMAIN}</span>/users/alexdebrie1
+<span class="token punctuation">{</span>
+  <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"Alex DeBrie"</span>,
+  <span class="token string">"userId"</span><span class="token builtin class-name">:</span> <span class="token string">"alexdebrie1"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>This isn’t a full-fledged REST API, and you’ll want to add things like error handling, authentication, and additional business logic. This does give a framework in which you can work to set up those things.</p>
+<h4>Path-specific routing</h4>
+<p>Let’s take another look at our function configuration in <code class="language-text">serverless.yml</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">functions:
+  app:
+    handler: wsgi.handler
+    events:
+      - http: ANY /
+      - http: &#39;ANY {proxy+}&#39;</code></pre></div>
+<p>We’re forwarding all traffic on the domain to our application and letting Flask handle the entirety of the routing logic. There is a benefit to this—you don’t have to manually string up all my routes and functions. You can also limit the impact of cold-starts on lightly-used routes.</p>
+<p>However, we also lose some of the benefits of the serverless architecture. You can isolate your bits of logic into separate functions and get a decent look at your application from standard metrics.</p>
+<p>If each route is handled by a different Lambda function, then you can see:</p>
+<ul>
+<li>How many times each route is invoked</li>
+<li>How many errors you have for each route</li>
+<li>How long each route takes (and how much money you could save if you made that route faster)</li>
+</ul>
+<p>Luckily, you can still get these things if you want them! You can configure your <code class="language-text">serverless.yml</code> so that different routes are routed to different instances of your function.</p>
+<p>Each function instance will have the same code, but they’ll be segmented for metrics purposes:</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token key atrule">functions</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> wsgi.handler
+    <span class="token key atrule">events</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> ANY /
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> <span class="token string">'ANY {proxy+}'</span>
+  <span class="token key atrule">getUser</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> wsgi.handler
+    <span class="token key atrule">events</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> <span class="token string">'GET /users/{proxy+}'</span>
+  <span class="token key atrule">createUser</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> wsgi.handler
+    <span class="token key atrule">events</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> <span class="token string">'POST /users'</span></code></pre></div>
+<p>Now, all requests to <code class="language-text">GET /users/:userId</code> will be handled by the <code class="language-text">getUser</code> instance of your application, and all requests to <code class="language-text">POST /users/</code> will be handled by the <code class="language-text">createUser</code> instance. For any other requests, they’ll be handled by the main <code class="language-text">app</code> instance of your function.</p>
+<p>Again, none of this is required, and it’s a bit of an overweight solution; each specific endpoint will include the full application code for your other endpoints. However, it’s a good balance between speed of development by using the tools you’re used to, along with the per-endpoint granularity that serverless application patterns provide.</p>
+<h4>Local development configuration with Serverless offline plugin</h4>
+<p>When developing an application, it’s nice to rapidly iterate by developing and testing locally rather than doing a full deploy between changes. In this section, we’ll cover how to configure your environment for local development.</p>
+<p>The great thing about the <code class="language-text">serverless-wsgi</code> plugin is that it includes a built-in solution for local development. To start the local server, just run <code class="language-text">sls wsgi serve</code>:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls wsgi serve
+ * Running on http://localhost:5000/ <span class="token punctuation">(</span>Press CTRL+C to quit<span class="token punctuation">)</span>
+ * Restarting with <span class="token function">stat</span>
+ * Debugger is active<span class="token operator">!</span>
+ * Debugger PIN: <span class="token number">109</span>-942-480</code></pre></div>
+<p>Then navigate to your root page on <code class="language-text">localhost:5000</code> in your browser:</p>
+<img width="985" alt="Serverless WSGI Serve" src="https://user-images.githubusercontent.com/6509926/32271253-07ba02e0-bec7-11e7-8ef7-4cc9e276d087.png">
+<p>It works! If you make a change in your <code class="language-text">app.py</code> file, it will be updated the next time you hit your endpoint. This rapidly improves development time.</p>
+<p>While this works easily for a stateless endpoint like “Hello World!”, it’s a little trickier for our <code class="language-text">/users</code> endpoints that interact with a database.</p>
+<p>Luckily, there’s a plugin for doing local development with a local DynamoDB emulator. We’ll use the <a href="https://github.com/99xt/serverless-dynamodb-local"><code class="language-text">serverless-dynamodb-local</code></a> plugin for this.</p>
+<p>First, let’s install the plugin:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ npm install --save-dev serverless-dynamodb-local</code></pre></div>
+<p>Then, let’s add the plugin to our <code class="language-text">serverless.yml</code>. We’ll also add some config in the <code class="language-text">custom</code> block so that it locally creates our tables defined in the <code class="language-text">resources</code> block:</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token key atrule">plugins</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>python<span class="token punctuation">-</span>requirements
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>wsgi
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>dynamodb<span class="token punctuation">-</span>local
+
+<span class="token key atrule">custom</span><span class="token punctuation">:</span>
+  <span class="token key atrule">tableName</span><span class="token punctuation">:</span> <span class="token string">'users-table-${self:provider.stage}'</span>
+  <span class="token key atrule">wsgi</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> app.app
+    <span class="token key atrule">packRequirements</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">pythonRequirements</span><span class="token punctuation">:</span>
+    <span class="token key atrule">dockerizePip</span><span class="token punctuation">:</span> non<span class="token punctuation">-</span>linux
+  <span class="token key atrule">dynamodb</span><span class="token punctuation">:</span>
+    <span class="token key atrule">start</span><span class="token punctuation">:</span>
+      <span class="token key atrule">migrate</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre></div>
+<p>Then, run a command to install DynamoDB local:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls dynamodb <span class="token function">install</span></code></pre></div>
+<p>Finally, we need to make some small changes to our application code. When instantiating our DynamoDB client, we’ll add in some special configuration if we’re in a local, offline environment.</p>
+<p>When developing locally, the <code class="language-text">serverless-wsgi</code> plugin sets an environment variable of <code class="language-text">IS_OFFLINE</code> to <code class="language-text">true</code>, so we’ll use that to handle our config. Change the beginning of <code class="language-text">app.py</code> to the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># app.py</span>
+
+<span class="token keyword">import</span> os
+
+<span class="token keyword">import</span> boto3
+
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span> jsonify<span class="token punctuation">,</span> request
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+USERS_TABLE <span class="token operator">=</span> os<span class="token punctuation">.</span>environ<span class="token punctuation">[</span><span class="token string">'USERS_TABLE'</span><span class="token punctuation">]</span>
+IS_OFFLINE <span class="token operator">=</span> os<span class="token punctuation">.</span>environ<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'IS_OFFLINE'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> IS_OFFLINE<span class="token punctuation">:</span>
+    client <span class="token operator">=</span> boto3<span class="token punctuation">.</span>client<span class="token punctuation">(</span>
+        <span class="token string">'dynamodb'</span><span class="token punctuation">,</span>
+        region_name<span class="token operator">=</span><span class="token string">'localhost'</span><span class="token punctuation">,</span>
+        endpoint_url<span class="token operator">=</span><span class="token string">'http://localhost:8000'</span>
+    <span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    client <span class="token operator">=</span> boto3<span class="token punctuation">.</span>client<span class="token punctuation">(</span><span class="token string">'dynamodb'</span><span class="token punctuation">)</span>
+
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span>os<span class="token punctuation">.</span>environ<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> rest of application code <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span></code></pre></div>
+<p>Now, our DynamoDB client is configured to use DynamoDB local if we’re running locally, or use the default options if running in Lambda.</p>
+<p>Let’s see it if works. You’ll need two different terminal windows now. In your first window, start up DynamoDB local:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ sls dynamodb start
+Dynamodb Local Started, Visit: http://localhost:8000/shell
+Serverless: DynamoDB - created table users-table-dev</code></pre></div>
+<p>In the second window, start up your local WSGI server:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">sls wsgi serve
+ * Running on http://localhost:5000/ <span class="token punctuation">(</span>Press CTRL+C to quit<span class="token punctuation">)</span>
+ * Restarting with <span class="token function">stat</span>
+ * Debugger is active<span class="token operator">!</span>
+ * Debugger PIN: <span class="token number">109</span>-942-480</code></pre></div>
+<p>Let’s run our <code class="language-text">curl</code> command from earlier to hit our local endpoint and create a user:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">curl</span> -H <span class="token string">"Content-Type: application/json"</span> -X POST http://localhost:5000/users -d <span class="token string">'{"userId": "alexdebrie1", "name": "Alex DeBrie"}'</span>
+<span class="token punctuation">{</span>
+  <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"Alex DeBrie"</span>,
+  <span class="token string">"userId"</span><span class="token builtin class-name">:</span> <span class="token string">"alexdebrie1"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>And then retrieve the user:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">curl</span> -H <span class="token string">"Content-Type: application/json"</span> -X GET http://localhost:5000/users/alexdebrie1
+<span class="token punctuation">{</span>
+  <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"Alex DeBrie"</span>,
+  <span class="token string">"userId"</span><span class="token builtin class-name">:</span> <span class="token string">"alexdebrie1"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Yep, it works just like it did on Lambda.</p>
+<p>This local setup can really speed up your workflow while still allowing you to emulate a close approximation of the Lambda environment.</p>
+<h4>Converting an existing Flask application</h4>
+<p>If you already have an existing Flask application, it’s very easy to convert to a Serverless-friendly application. Do the following steps:</p>
+<ol>
+<li>Install the <code class="language-text">serverless-wsgi</code> and <code class="language-text">serverless-python-requirements</code> packages — <code class="language-text">npm install --save serverless-wsgi serverless-python-requirements</code></li>
+<li>
+<p>Configure your <code class="language-text">serverless.yml</code>:</p>
+<p>You should have a <code class="language-text">serverless.yml</code> that looks like the following:</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token key atrule">service</span><span class="token punctuation">:</span> serverless<span class="token punctuation">-</span>flask
+
+<span class="token key atrule">plugins</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>python<span class="token punctuation">-</span>requirements
+  <span class="token punctuation">-</span> serverless<span class="token punctuation">-</span>wsgi
+
+<span class="token key atrule">custom</span><span class="token punctuation">:</span>
+  <span class="token key atrule">wsgi</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> app.app
+    <span class="token key atrule">packRequirements</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">pythonRequirements</span><span class="token punctuation">:</span>
+    <span class="token key atrule">dockerizePip</span><span class="token punctuation">:</span> non<span class="token punctuation">-</span>linux
+
+<span class="token key atrule">provider</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> aws
+  <span class="token key atrule">runtime</span><span class="token punctuation">:</span> python3.6
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> dev
+  <span class="token key atrule">region</span><span class="token punctuation">:</span> us<span class="token punctuation">-</span>east<span class="token punctuation">-</span><span class="token number">1</span>
+
+<span class="token key atrule">functions</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>
+    <span class="token key atrule">handler</span><span class="token punctuation">:</span> wsgi.handler
+    <span class="token key atrule">events</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> ANY /
+      <span class="token punctuation">-</span> <span class="token key atrule">http</span><span class="token punctuation">:</span> <span class="token string">'ANY {proxy+}'</span></code></pre></div>
+</li>
+</ol>
+<p>Make sure that the value for <code class="language-text">app</code> under the <code class="language-text">custom.wsgi</code> block is configured for your application. It should be <code class="language-text">&lt;module.instance&gt;</code>, where <code class="language-text">module</code> is the name of the Python file with your Flask instance and <code class="language-text">instance</code> is the name of the variable with your Flask application.</p>
+<ol start="3">
+<li>Deploy your function with <code class="language-text">sls deploy</code>!</li>
+</ol>
+<p><strong>Note:</strong> if you use other resources (databases, credentials, etc.), you’ll need to make sure those make it into your application. Check out our other material on <a href="https://serverless.com/blog/serverless-secrets-api-keys/">managing secrets &#x26; API keys with Serverless</a>.</p>
+<h4>Using the Quick Start Template</h4>
+<p>If you don’t have an existing Flask application to convert, but you want a well-structured starting point for an application, you can check out our <a href="https://github.com/alexdebrie/serverless-flask">serverless-flask</a> application template.</p>
+<p>To use it, you’ll need the <a href="https://serverless.com/framework/docs/providers/aws/guide/quick-start/">Serverless Framework</a> installed. You’ll also need your environment configured with <a href="https://serverless.com/framework/docs/providers/aws/guide/credentials/">AWS credentials</a>.</p>
+<p>With the Framework installed, use the <code class="language-text">sls install</code> command to clone the template project. Then, change into the directory and run a postsetup script to configure it as desired:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ serverless <span class="token function">install</span> --url https://github.com/alexdebrie/serverless-flask --name my-flask-app
+$ <span class="token builtin class-name">cd</span> my-flask-app <span class="token operator">&amp;&amp;</span> <span class="token function">npm</span> run setup</code></pre></div>
+<p>Then run <code class="language-text">sls deploy</code> and hit the main web page to see your starter application:</p>
+<img width="992" alt="Serverless Flask landing page" src="https://user-images.githubusercontent.com/6509926/32280095-b690a726-bee8-11e7-9a66-f92b40b4aaba.png">
+<p>You’re off and running! What will you build? ⚡️</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/lumen/posts/2017-11-14-abcs-of-iam-permissions/">← <!-- -->The ABCs of IAM: Managing permissions with Serverless</a></li><li><a rel="next" href="/lumen/posts/2017-11-20-near-cloud-crdt-kuhiro/">Birth of the NearCloud: on CRDTs and Kuhiro<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/2017-11-15-flask-python-rest-api-serverless-lambda-dynamodb/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-36e457a5393b79b99515.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/lumen/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/lumen/cd7d5f864fc9e15ed8adef086269b0aeff617554-c8f68cb3ade1320f5257.js" async=""></script><script src="/lumen/commons-4c36ffabef1434ec1126.js" async=""></script><script src="/lumen/app-36e457a5393b79b99515.js" async=""></script><script src="/lumen/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/lumen/framework-5fc6169171e885c3b522.js" async=""></script><script src="/lumen/webpack-runtime-c76c0c9d42bc9bf56761.js" async=""></script></body></html>

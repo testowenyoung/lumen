@@ -1,0 +1,503 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/lumen/styles.1d0daeadf0762b76da98.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/lumen/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/lumen/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/lumen/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/lumen/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/lumen/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/lumen/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/lumen/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/lumen/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/lumen/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/lumen/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/lumen/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/lumen/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/lumen/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/lumen/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/lumen/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/lumen/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/lumen/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/lumen/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/lumen/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/lumen/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/lumen/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/lumen/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/lumen/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/lumen/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/lumen/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/lumen/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/lumen/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/lumen/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/lumen/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/lumen/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/lumen/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/lumen/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/lumen/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/lumen/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/lumen/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/lumen/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/lumen/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/lumen/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/lumen/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/lumen/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/lumen/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/lumen/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/lumen/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/lumen/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/lumen/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/lumen/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/lumen/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/lumen/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/lumen/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/lumen/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/lumen/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/lumen/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/lumen/rss.xml"/><link rel="icon" href="/lumen/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/lumen/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/lumen/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/lumen/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/lumen/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/lumen/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/lumen/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/lumen/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/lumen/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/lumen/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">How to write your first Serverless Component | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="A step-by-step tutorial for writing your first Serverless Component, and then using it to build a serverless application."/><meta data-react-helmet="true" property="og:title" content="How to write your first Serverless Component"/><meta data-react-helmet="true" property="og:description" content="A step-by-step tutorial for writing your first Serverless Component, and then using it to build a serverless application."/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="How to write your first Serverless Component"/><meta data-react-helmet="true" name="twitter:description" content="A step-by-step tutorial for writing your first Serverless Component, and then using it to build a serverless application."/><link as="script" rel="preload" href="/lumen/webpack-runtime-c76c0c9d42bc9bf56761.js"/><link as="script" rel="preload" href="/lumen/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/lumen/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/lumen/app-36e457a5393b79b99515.js"/><link as="script" rel="preload" href="/lumen/commons-4c36ffabef1434ec1126.js"/><link as="script" rel="preload" href="/lumen/cd7d5f864fc9e15ed8adef086269b0aeff617554-c8f68cb3ade1320f5257.js"/><link as="script" rel="preload" href="/lumen/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/lumen/page-data/posts/2018-06-04-how-write-first-serverless-component/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/lumen/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/lumen/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">How to write your first Serverless Component</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">June 02, 2018</p></header><section><p>The open-source <a href="https://github.com/serverless/components">Serverless Components project</a> makes it easy for anyone to author their own application components. We have <a href="#more-serverless-components-tutorials">several previous posts</a>.</p>
+<p>But what if you want to try building a brand new reusable component of your own?</p>
+<p>In this post, we will cover how to build your very first Serverless Component. Specifically, we’ll be making an AWS CloudWatch Metric Alarm component from scratch.</p>
+<p>The component will provision and encapsulate functionality for managing a CloudWatch metric alarms. We’ll then use this component in an application that tracks AWS billing and sets alarms for estimated charges.</p>
+<p>The goal here is two-fold: streamline the complexity of provisioning metric alarms, and provide an intuitive interface via well-defined inputs and outputs that can be reused to build applications and higher-order components.</p>
+<p>Ready? Awesome.</p>
+<p>What we will cover:</p>
+<ul>
+<li>Defining the reasoning for the component</li>
+<li>Defining the configuration</li>
+<li>Defining the input and output parameters</li>
+<li>Implementing the component</li>
+<li>Using the component in an example application</li>
+<li>Running the application</li>
+</ul>
+<h4>The CloudWatch Metric Alarm Component</h4>
+<p>We will build a <code class="language-text">aws-cloudwatch-metric-alarm</code> component to create AWS CloudWatch alarms on metrics based on various conditions that are supported by AWS.</p>
+<p>A Serverless Component consists of two files: <code class="language-text">serverless.yml</code> for configuration and <code class="language-text">index.js</code> for implementation code.</p>
+<h5>Configuration</h5>
+<p>To start off, let’s create a <code class="language-text">serverless.yml</code> file:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">mkdir</span> aws-cloudwatch-metric-alarm <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> aws-cloudwatch-metric-alarm
+$ <span class="token function">touch</span> serverless.yml</code></pre></div>
+<p>Open the file in your favorite editor.</p>
+<p>We will start by specifying some basic metadata about the component, like so:</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token key atrule">type</span><span class="token punctuation">:</span> aws<span class="token punctuation">-</span>cloudwatch<span class="token punctuation">-</span>metric<span class="token punctuation">-</span>alarm
+<span class="token key atrule">version</span><span class="token punctuation">:</span> 0.1.0
+<span class="token key atrule">core</span><span class="token punctuation">:</span> 0.2.x
+
+<span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"Provision AWS CloudWatch Metric Alarms"</span>
+<span class="token key atrule">license</span><span class="token punctuation">:</span> Apache<span class="token punctuation">-</span><span class="token number">2.0</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> <span class="token string">"Serverless, Inc. &lt;hello@serverless.com> (https://serverless.com)"</span>
+<span class="token key atrule">repository</span><span class="token punctuation">:</span> <span class="token string">"github:serverless/components"</span></code></pre></div>
+<p>Let’s go over what all of this does. The <code class="language-text">type</code> attribute identifies the component. This will be used later in our example app to reference the component.</p>
+<p>The <code class="language-text">version</code> attribute is the current version of our component following semantic versioning. The <code class="language-text">core</code> specifies the release version of Serverless Components we are using. It is helpful to fix a version against which our component has been built and tested.</p>
+<p>The next block is quite intuitive and describes some other metadata for the component. Since I will merge this component to the main <a href="https://github.com/serverless/components/tree/master/registry">Serverless Component registry</a>, I have the <code class="language-text">author</code> and <code class="language-text">repository</code> attributes set accordingly.</p>
+<h5>Input Parameters</h5>
+<p>To create a component that can provide functionality in a flexible manner, Serverless Components has a concept of declaring <code class="language-text">inputTypes</code>. This defines the spec for the component’s input parameters.</p>
+<p>When we write our example app that uses this component, the system will validate the user-supplied input parameters against this spec. We will see the validation at work later in the post.</p>
+<p>In our case, we will be using the <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html">AWS CloudWatch API</a> to <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#putMetricAlarm-property">create/update</a> alarms, <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#describeAlarms-property">list</a> alarms and <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#deleteAlarms-property">delete</a> alarms.</p>
+<p>So let’s start by defining our <code class="language-text">inputTypes</code> that match the CloudWatch APIs.</p>
+<p>Append the following block to the <code class="language-text">serverless.yml</code> file:</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token punctuation">...</span>
+<span class="token key atrule">inputTypes</span><span class="token punctuation">:</span>
+  <span class="token key atrule">alarmName</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The name for the alarm. This name must be unique within the AWS account."</span>
+  <span class="token key atrule">alarmDescription</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The description for the alarm."</span>
+  <span class="token key atrule">comparisonOperator</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The arithmetic operation to use when comparing the specified statistic and threshold. Valid values are: `GreaterThanOrEqualToThreshold` | `GreaterThanThreshold` | `LessThanThreshold` | `LessThanOrEqualToThreshold`"</span>
+  <span class="token key atrule">threshold</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> number
+    <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The value against which the specified statistic is compared."</span>
+  <span class="token key atrule">metricName</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The name for the metric associated with the alarm."</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The namespace for the metric associated with the alarm."</span>
+  <span class="token key atrule">dimensions</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> object<span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The dimensions for the metric associated with the alarm."</span>
+  <span class="token key atrule">period</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> integer
+    <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The period, in seconds, over which the specified statistic is applied. Valid values are 10, 30, and any multiple of 60, max: 86400.)"</span>
+  <span class="token key atrule">evaluationPeriods</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> integer
+    <span class="token key atrule">required</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The number of periods over which data is compared to the specified threshold."</span>
+  <span class="token key atrule">actionsEnabled</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> boolean
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"Indicates whether actions should be executed during any changes to the alarm state."</span>
+  <span class="token key atrule">okActions</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string<span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The actions to execute when this alarm transitions to an `OK` state from any other state. Each action is specified as an Amazon Resource Name (ARN)."</span>
+  <span class="token key atrule">alarmActions</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string<span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The actions to execute when this alarm transitions to the `ALARM` state from any other state. Each action is specified as an Amazon Resource Name (ARN)."</span>
+  <span class="token key atrule">insufficientDataActions</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string<span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The actions to execute when this alarm transitions to the `INSUFFICIENT_DATA` state from any other state. Each action is specified as an Amazon Resource Name (ARN)."</span>
+  <span class="token key atrule">statistic</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The statistic for the metric associated with the alarm, other than percentile. Valid values are: `SampleCount` | `Average` | `Sum` | `Minimum` | `Maximum`. Either `statistic` or `extendedStatistic`, but not both."</span>
+  <span class="token key atrule">extendedStatistic</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100. Either `statistic` or `extendedStatistic`, but not both."</span>
+  <span class="token key atrule">unit</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The unit of measure for the statistic. Valid values are: `Seconds` | `Microseconds` | `Milliseconds` | `Bytes` | `Kilobytes` | `Megabytes` | `Gigabytes` | `Terabytes` | `Bits` | `Kilobits` | `Megabits` | `Gigabits` | `Terabits` | `Percent` | `Count` | `Bytes/Second` | `Kilobytes/Second` | `Megabytes/Second` | `Gigabytes/Second` | `Terabytes/Second` | `Bits/Second` | `Kilobits/Second` | `Megabits/Second` | `Gigabits/Second` | `Terabits/Second` | `Count/Second` | `None`"</span>
+  <span class="token key atrule">datapointsToAlarm</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> int
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The number of datapoints that must be breaching to trigger the alarm."</span>
+  <span class="token key atrule">treatMissingData</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"Sets how this alarm is to handle missing data points. Valid values are: `breaching` | `notBreaching` | `ignore` | `missing`"</span>
+  <span class="token key atrule">evaluateLowSampleCountPercentile</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"Used only for alarms based on percentiles. Valid values are: `evaluate` | `ignore`"</span></code></pre></div>
+<p>Ya I know, it is quite verbose, but that’s how many parameters are in the API.</p>
+<h5>Output Parameters</h5>
+<p>Just like <code class="language-text">inputTypes</code>, Serverless Components also have a concept of declaring <code class="language-text">outputTypes</code>. This is the spec for the component’s outputs that it exposes.</p>
+<p>Let’s start by defining our <code class="language-text">outputTypes</code> that match some of the important and relevant outputs from the calls to the CloudWatch APIs.</p>
+<p>The outputs that you expose from your component is totally your choice. The point to keep in mind is that the component will be used later to build higher-order components and applications. So choose to expose outputs that will make sense later on. So for example, we expose the <code class="language-text">alarmArn</code> output parameter, that can be passed into another component to do something with the alarm.</p>
+<p>Append the following block to the <code class="language-text">serverless.yml</code> file:</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token punctuation">...</span>
+<span class="token key atrule">outputTypes</span><span class="token punctuation">:</span>
+  <span class="token key atrule">alarmName</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The name for the alarm. This name must be unique within the AWS account."</span>
+  <span class="token key atrule">alarmArn</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The Amazon Resource Name (ARN) of the alarm."</span>
+  <span class="token key atrule">alarmConfigurationUpdatedTimestamp</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The time stamp of the last update to the alarm configuration."</span>
+  <span class="token key atrule">stateValue</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The state value for the alarm."</span>
+  <span class="token key atrule">stateReason</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"An explanation for the alarm state, in text format."</span>
+  <span class="token key atrule">stateUpdatedTimestamp</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> string
+    <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"The time stamp of the last update to the alarm state."</span></code></pre></div>
+<p>Notice that we use names for the input and output parameters that match the AWS API. The only subtle difference is that the AWS API uses CamelUpperCase whereas Serverless Components use camelCase. However this small transformation can be easily automated in code.</p>
+<h5>Documentation</h5>
+<p>Notice that the <code class="language-text">inputTypes</code> and <code class="language-text">outputTypes</code> have a nice format where it is easy to understand each parameter and is self-documenting. The system will use this information to automatically generate documentation for the README file.</p>
+<p>Speaking of which, let’s create a README.md file.</p>
+<p>For auto-generating documentation for the input/output parameters, paste the following markers into your README file:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># README.md
+
+# CloudWatch Metric Alarm component
+
+The component encapsulates the functionality to manage provisioning of a CloudWatch Metric Alarm on the AWS cloud.
+
+&lt;!-- AUTO-GENERATED-CONTENT:START (TOC) --&gt;
+
+&lt;!-- AUTO-GENERATED-CONTENT:END --&gt;
+
+
+&lt;!-- AUTO-GENERATED-CONTENT:START (COMPONENT_INPUT_TYPES) --&gt;
+
+&lt;!-- AUTO-GENERATED-CONTENT:END --&gt;
+
+
+&lt;!-- AUTO-GENERATED-CONTENT:START (COMPONENT_OUTPUT_TYPES) --&gt;
+
+&lt;!-- AUTO-GENERATED-CONTENT:END --&gt;
+
+## Example
+...</code></pre></div>
+<p>The auto-doc generation capability is invoked by running <code class="language-text">npm run docs</code> from the root of the Serverless Components project folder.</p>
+<p><strong>Note:</strong> Since our component is outside the Serverless Components project structure, you will have to temporarily copy your component under the <code class="language-text">registry</code> folder of the Serverless Components project repo, and then run:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> run docs</code></pre></div>
+<p>This will generate the required documentation and place them between the markers we added in the README.ms file. Check out the <a href="https://github.com/rupakg/rg-components/blob/master/rg-registry/aws-cloudwatch-metric-alarm/README.md">README.md</a> file for the final documentation.</p>
+<h5>Implementation</h5>
+<p>Now that we have defined the input/output interface, let’s look at the implementation for our component. Serverless Components lay down a contract for implementing provisioning, listing status and cleanup logic.</p>
+<h5>Commands</h5>
+<p>The provisioning functionality is implemented via the <code class="language-text">deploy</code> command while the cleanup functionality is implemented via the <code class="language-text">remove</code> command. The <code class="language-text">info</code> command is for listing out resources or output parameters after provisioning.</p>
+<p>The underlying system is set to call the <code class="language-text">info</code> command automatically after the <code class="language-text">deploy</code> command is executed. When there are higher-order components or applications that are composed of other components, the <code class="language-text">deploy</code>, <code class="language-text">info</code> and <code class="language-text">remove</code> commands are called down the full dependency chain.</p>
+<p>Apart from these three commands, a component author can include other commands. These are JS methods that are exported and available to the user as commands from the CLI.</p>
+<p>The implementation code will live in the <code class="language-text">index.js</code> file. Let’s create the file in our project folder:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">touch</span> index.js</code></pre></div>
+<p>Open the file in your favorite editor.</p>
+<p>Let’s build these three commands for our component.</p>
+<h5>Provision Alarm</h5>
+<p>We will add the provisioning logic for the CloudWatch Metric Alarm in the <code class="language-text">deploy</code> method. In the <code class="language-text">index.js</code> file, let’s create a method named <code class="language-text">deploy</code>.</p>
+<p>Add the following code to the file:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"># index<span class="token punctuation">.</span>js
+
+<span class="token operator">...</span>
+<span class="token keyword">const</span> <span class="token function-variable function">deploy</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">inputs<span class="token punctuation">,</span> context</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> outputs <span class="token operator">=</span> context<span class="token punctuation">.</span>state
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>alarmName <span class="token operator">&amp;&amp;</span> inputs<span class="token punctuation">.</span>alarmName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    context<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Creating CloudWatch Metrics Alarm: '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>inputs<span class="token punctuation">.</span>alarmName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">'</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> <span class="token function">putMetricAlarm</span><span class="token punctuation">(</span>inputs<span class="token punctuation">)</span>
+    outputs <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">describeAlarmsForMetric</span><span class="token punctuation">(</span>inputs<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  context<span class="token punctuation">.</span><span class="token function">saveState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token operator">...</span>inputs<span class="token punctuation">,</span> <span class="token operator">...</span>outputs <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> outputs
+<span class="token punctuation">}</span>
+<span class="token operator">...</span></code></pre></div>
+<p>Let’s look at the signature of the <code class="language-text">deploy</code> method. It takes two parameters, <code class="language-text">inputs</code> and <code class="language-text">context</code>. The system packs the input parameters from the <code class="language-text">serverless.yml</code> and passes them via the <code class="language-text">inputs</code> parameter. The system packs some other valuable information via the <code class="language-text">context</code> parameter. We will go over <code class="language-text">context</code> later in the post.</p>
+<p>The above command calls two helper methods: <code class="language-text">putMetricAlarm(inputs)</code> and <code class="language-text">describeAlarmsForMetric(inputs)</code>. The <code class="language-text">putMetricAlarm(inputs)</code> method calls the CloudWatch <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#putMetricAlarm-property">putMetricAlarm</a> API method. It creates or updates an existing metric alarm. This API call does not return any information about the alarm that is provisioned.</p>
+<p>Next, the <code class="language-text">describeAlarmsForMetric(inputs)</code> method calls the CloudWatch <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#describeAlarms-property">describeAlarms</a> API method. This method returns information about the alarm provisioned by the earlier call.</p>
+<p>The call to <code class="language-text">context.saveState({ ...inputs, ...outputs })</code> saves the output as state. We will look at state management in detail later in the post.</p>
+<h5>List Alarm</h5>
+<p>We will add the code for listing the alarm that we just created, in the <code class="language-text">info</code> method. In the <code class="language-text">index.js</code> file, create a method named <code class="language-text">info</code>. Add the following code to the file:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"># index<span class="token punctuation">.</span>js
+
+<span class="token operator">...</span>
+<span class="token keyword">const</span> <span class="token function-variable function">info</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">inputs<span class="token punctuation">,</span> context</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>alarmName<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  <span class="token keyword">let</span> outputs <span class="token operator">=</span> context<span class="token punctuation">.</span>state
+
+  outputs <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">describeAlarmsForMetric</span><span class="token punctuation">(</span>inputs<span class="token punctuation">)</span>
+  context<span class="token punctuation">.</span><span class="token function">saveState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token operator">...</span>inputs<span class="token punctuation">,</span> <span class="token operator">...</span>outputs <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  context<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Listing CloudWatch Metrics Alarm for '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>alarmName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">'</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>
+    <span class="token string">'-------------------------------------------------------------------------------------'</span>
+  <span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Metric Name: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>metricName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Namespace: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>namespace<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Alarm Name: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>outputs<span class="token punctuation">.</span>alarm<span class="token punctuation">.</span>alarmName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Alarm Arn: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>outputs<span class="token punctuation">.</span>alarm<span class="token punctuation">.</span>alarmArn<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Alarm State: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>outputs<span class="token punctuation">.</span>alarm<span class="token punctuation">.</span>stateValue<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>
+    <span class="token string">'-------------------------------------------------------------------------------------'</span>
+  <span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> outputs
+<span class="token punctuation">}</span>
+<span class="token operator">...</span></code></pre></div>
+<p>The above <code class="language-text">info</code> command calls the <code class="language-text">describeAlarmsForMetric(inputs)</code> which in turn calls the <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#describeAlarms-property">describeAlarms</a> API to get information about the alarm that was provisioned in the <code class="language-text">deploy</code> command.</p>
+<p>The data is then written out to the log as output, and printed on the terminal.</p>
+<h5>Remove Alarm</h5>
+<p>We will add the code for deleting the alarm that we created, and cleanup any resources, in the <code class="language-text">remove</code> method. In the <code class="language-text">index.js</code> file, create a method named <code class="language-text">remove</code>.</p>
+<p>Add the following code to the file:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"># index<span class="token punctuation">.</span>js
+
+<span class="token operator">...</span>
+<span class="token keyword">const</span> <span class="token function-variable function">remove</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">inputs<span class="token punctuation">,</span> context</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>alarmName<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    context<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Removing CloudWatch Metrics Alarm: '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>alarmName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">'</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> <span class="token function">deleteAlarm</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>alarmName<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>e<span class="token punctuation">.</span>message<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'Invalid Metric Alarm name specified'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  context<span class="token punctuation">.</span><span class="token function">saveState</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">...</span></code></pre></div>
+<p>The <code class="language-text">remove</code> command calls the <code class="language-text">deleteAlarm(context.state.alarmName)</code> which in turn calls the CloudWatch <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatch.html#deleteAlarms-property">deleteAlarms</a> API method, to delete the alarm that was provisioned earlier.</p>
+<p><strong>Note:</strong> You can view the full <code class="language-text">index.js</code> file <a href="https://github.com/rupakg/rg-components/blob/master/rg-registry/aws-cloudwatch-metric-alarm/index.js">here</a>.</p>
+<h5>Context</h5>
+<p>Any method that is exported as a command is sent a <code class="language-text">context</code> parameter for the method implementing the command. The <code class="language-text">deploy()</code>, <code class="language-text">remove()</code> and <code class="language-text">info()</code> methods are such examples.</p>
+<p>The system packs some valuable information via the <code class="language-text">context</code> parameter, the most important ones being:</p>
+<ul>
+<li>Data structures: <code class="language-text">state</code>, <code class="language-text">options</code>, <code class="language-text">children</code> and <code class="language-text">archive</code></li>
+<li>Functions: <code class="language-text">load</code> and <code class="language-text">saveState</code></li>
+</ul>
+<p>Let’s look at each of these one at a time.</p>
+<h5>State Management</h5>
+<p>The system allows state management for components. The component author is in control of what gets saved as state.</p>
+<p>The command methods can access the data stored in state via the <code class="language-text">state</code> data structure. The component can look at the state of data and decide to execute different paths in logic. For instance, the <code class="language-text">deploy</code> method can decide if the component needs to call the ‘create’  or the ‘update’ logic.</p>
+<h5>The <code class="language-text">saveState</code> method</h5>
+<p>You will notice that each command calls <code class="language-text">context.saveState()</code> and optionally passes in some data that gets saved as state for the component. The system saves state for a component in the <code class="language-text">state.json</code> file. We will look at the <code class="language-text">state.json</code> file for our application later in the post.</p>
+<p>In our component, the <code class="language-text">deploy</code> command saves the relevant outputs to the state by calling the <code class="language-text">context.saveState()</code> method.</p>
+<h5>Options</h5>
+<p>The CLI allows for passing in any command-line options and passes it in the <code class="language-text">options</code> data structure, via the <code class="language-text">context</code> to the command methods. For e.g. the <code class="language-text">aws-dynamodb</code> component exposes an <code class="language-text">insert</code> command that takes a few command-line options to insert data into a DynamoDB table.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ components insert --tablename BlogPost --itemdata <span class="token string">'{ "some":"data" }'</span></code></pre></div>
+<h5>Children</h5>
+<p>Higher-order components or applications can be composed of child components. The <code class="language-text">context</code> gives access to the child components via the <code class="language-text">children</code> object. The <code class="language-text">children</code> object can be used to call commands exposed by the child components.</p>
+<p>For example, the <a href="https://github.com/serverless/components/tree/master/examples/retail-app">retail-app</a>’s <code class="language-text">deploy</code> command accesses the child component <code class="language-text">aws-dynamodb</code>’s <code class="language-text">insert</code> command to insert seed data.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"># index<span class="token punctuation">.</span>js
+
+<span class="token keyword">const</span> productsDb <span class="token operator">=</span> <span class="token keyword">await</span> context<span class="token punctuation">.</span>children<span class="token punctuation">.</span>productsDb
+<span class="token operator">...</span>
+<span class="token operator">...</span>
+<span class="token keyword">const</span> <span class="token function-variable function">insertItem</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">triesLeft<span class="token punctuation">,</span> wait</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token parameter">product</span><span class="token punctuation">)</span> <span class="token operator">=></span>
+        productsDb<span class="token punctuation">.</span>fns
+          <span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>productsDb<span class="token punctuation">.</span>inputs<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            log<span class="token operator">:</span> context<span class="token punctuation">.</span>log<span class="token punctuation">,</span>
+            state<span class="token operator">:</span> productsDb<span class="token punctuation">.</span>state<span class="token punctuation">,</span>
+            options<span class="token operator">:</span> <span class="token punctuation">{</span>
+              tablename<span class="token punctuation">,</span>
+              itemdata<span class="token operator">:</span> product
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token operator">...</span></code></pre></div>
+<p>Also, the system automatically figures out the dependency tree for your components’ children. It has also built-in safeguards against accidental <a href="https://github.com/serverless/components/tree/master/examples/features/circular-dependencies">circular-dependency</a> errors.</p>
+<p>You can see how powerful and flexible Serverless Components can be.</p>
+<h5>The <code class="language-text">load</code> method</h5>
+<p>The <code class="language-text">context</code> also exposes a <code class="language-text">load</code> method, which allows you to load a component programatically inside another component or an application. For instance, the <code class="language-text">aws-lambda</code> component’s <code class="language-text">deploy</code> command, loads the child component <code class="language-text">aws-iam-role</code> programmatically to provision an IAM role.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"># index<span class="token punctuation">.</span>js
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">deploy</span><span class="token punctuation">(</span><span class="token parameter">inputs<span class="token punctuation">,</span> context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  <span class="token operator">...</span>
+
+  <span class="token keyword">const</span> defaultRoleComponent <span class="token operator">=</span> <span class="token keyword">await</span> context<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">'aws-iam-role'</span><span class="token punctuation">,</span> <span class="token string">'defaultRole'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>inputs<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-execution-role</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    service<span class="token operator">:</span> <span class="token string">'lambda.amazonaws.com'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token operator">...</span>
+  <span class="token operator">...</span></code></pre></div>
+<p>Although the component we created here was all declarative, but you can see how powerful Serverless Components can be considering that a higher-order component or an application can be entirely written programmatically.</p>
+<p>Hope this leaves you with enough information to create your own components!</p>
+<p>Now that we have written our component, let’s use it to build an application.</p>
+<p><strong>Note:</strong> You can find the full code for the <code class="language-text">aws-cloudwatch-metric-alarm</code> component <a href="https://github.com/rupakg/rg-components/blob/master/rg-registry/aws-cloudwatch-metric-alarm">here</a>.</p>
+<h4>The Billing Alarm Application</h4>
+<p>We will use the <code class="language-text">aws-cloudwatch-metric-alarm</code> component we just built to create a serverless application, <code class="language-text">cw-billing-alarm-app</code>, that will trigger an alarm for AWS Billing based on our configured settings. It will also send us an email when the alarm is triggered.</p>
+<p>The application is declaratively composed using the <code class="language-text">cw-billing-alarm-app</code> component, and has no implementation of its own. Hence, we only have a <code class="language-text">serverless.yml</code> configuration file to specify the component and its inputs.</p>
+<h5>File System Components</h5>
+<p>Serverless Components that are sourced from the <a href="https://github.com/serverless/components/tree/master/registry">main registry</a>, can be referenced by their <code class="language-text">type</code> name. By default, the component will be loaded from the registry.</p>
+<p>To make local development easy, Serverless Components have a feature of specifying a local folder as a value to the <code class="language-text">type</code> attribute. In that case, the component will be <a href="https://github.com/serverless/components/tree/master/examples/features/file-system-components">loaded from the file system</a>.</p>
+<p>In our application’s <code class="language-text">serverless.yml</code> file, we reference the <code class="language-text">aws-cloudwatch-metric-alarm</code> component from the local folder like so:</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token punctuation">...</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> ../../rg<span class="token punctuation">-</span>registry/aws<span class="token punctuation">-</span>cloudwatch<span class="token punctuation">-</span>metric<span class="token punctuation">-</span>alarm
+<span class="token punctuation">...</span></code></pre></div>
+<h5>Inputs</h5>
+<p>Based on the <code class="language-text">inputTypes</code> defined in the <code class="language-text">aws-cloudwatch-metric-alarm</code> component, we will add <code class="language-text">inputs</code> to the component in our application’s <code class="language-text">serverless.yml</code> file. Let’s create a <code class="language-text">serverless.yml</code> file in the application folder and add the following code to it:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">mkdir</span> cw-billing-alarm-app <span class="token operator">&amp;&amp;</span> cw-billing-alarm-app
+$ <span class="token function">touch</span> serverless.yml</code></pre></div>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># serverless.yml</span>
+
+<span class="token key atrule">type</span><span class="token punctuation">:</span> cw<span class="token punctuation">-</span>billing<span class="token punctuation">-</span>alarm<span class="token punctuation">-</span>app
+<span class="token key atrule">version</span><span class="token punctuation">:</span> 0.0.1
+
+<span class="token key atrule">components</span><span class="token punctuation">:</span>
+  <span class="token key atrule">billingAlarm</span><span class="token punctuation">:</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> ../../rg<span class="token punctuation">-</span>registry/aws<span class="token punctuation">-</span>cloudwatch<span class="token punctuation">-</span>metric<span class="token punctuation">-</span>alarm
+    <span class="token key atrule">inputs</span><span class="token punctuation">:</span>
+      <span class="token key atrule">alarmName</span><span class="token punctuation">:</span> rg<span class="token punctuation">-</span>billing<span class="token punctuation">-</span>alarm<span class="token punctuation">-</span>$<span class="token punctuation">{</span>self.serviceId<span class="token punctuation">}</span></code></pre></div>
+<p>The <code class="language-text">${self.serviceId}</code> is an unique identifier autogenerated by the system. You can always use your own value, but with this identifier in place you can create as many apps as you want by copying the configuration.</p>
+<h5>Input/Output Parameter Validation</h5>
+<p>If you inspect the <code class="language-text">inputTypes</code> that we defined for our <code class="language-text">aws-cloudwatch-metric-alarm</code> component, you will notice that there are several <code class="language-text">required</code> input parameters. To safe-guard against non-compliance with the requrements, the system will automatically validate the applications <code class="language-text">inputs</code> against the spec for the given component.</p>
+<p>Notice that we have only included the <code class="language-text">alarmName</code> parameter under the <code class="language-text">inputs</code> section. If you run the <code class="language-text">deploy</code> command you will see the validation in action:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ components deploy
+
+Error:
+Type error in component &quot;billingAlarm&quot;
+ - Input comparisonOperator has `undefined` value of &quot;undefined&quot; but expected the following: required true.
+ - Input threshold has `undefined` value of &quot;undefined&quot; but expected the following: required true.
+ - Input metricName has `undefined` value of &quot;undefined&quot; but expected the following: required true.
+ - Input namespace has `undefined` value of &quot;undefined&quot; but expected the following: required true.
+ - Input dimensions has `undefined` value of &quot;undefined&quot; but expected the following: required true.
+ - Input period has `undefined` value of &quot;undefined&quot; but expected the following: required true.
+ - Input evaluationPeriods has `undefined` value of &quot;undefined&quot; but expected the following: required true.
+...</code></pre></div>
+<p>Let’s quickly fix that by passing in input parameters that will remove the errors. Replace the entries in the <code class="language-text">serverless.yml</code> file with the following code:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># serverless.yml
+
+type: cw-billing-alarm-app
+version: 0.0.1
+
+components:
+  billingAlarm:
+    type: ../../rg-registry/aws-cloudwatch-metric-alarm
+    inputs:
+      alarmName: rg-billing-alarm-${self.serviceId}
+      alarmDescription: &#39;When Estimated Charges &gt; $20&#39;
+      comparisonOperator: GreaterThanOrEqualToThreshold
+      threshold: 20.0
+      metricName: EstimatedCharges
+      namespace: AWS/Billing
+      dimensions:
+        - name: &#39;Currency&#39;
+          value: &#39;USD&#39;
+      period: 28800 # 8 hrs
+      evaluationPeriods: 1
+      actionsEnabled: true
+      alarmActions:
+        - arn:aws:sns:us-east-1:xxxxxxxxxx:NotifyMe
+      statistic: Maximum
+      treatMissingData: missing</code></pre></div>
+<p>The <code class="language-text">alarmActions</code> attribute points to a pre-configured SNS topic that points to an email address of your choosing.</p>
+<h5>Running the Application</h5>
+<p>To deploy the app, run the following in the terminal:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ components deploy
+
+Creating CloudWatch Metrics Alarm: <span class="token string">'rg-billing-alarm-43qnfm6uio'</span>
+Listing CloudWatch Metrics Alarm <span class="token keyword">for</span> <span class="token string">'rg-billing-alarm-43qnfm6uio'</span>
+-------------------------------------------------------------------------------------
+Metric Name: EstimatedCharges
+Namespace: AWS/Billing
+Alarm Name: rg-billing-alarm-43qnfm6uio
+Alarm Arn: arn:aws:cloudwatch:us-east-1:xxxxxxxxxx:alarm:rg-billing-alarm-43qnfm6uio
+Alarm State: OK
+-------------------------------------------------------------------------------------</code></pre></div>
+<p>As expected, the application calls the child components <code class="language-text">deploy</code>, which in turn provisions the CloudWatch Metric Alarm. Then, it lists the alarms that it just provisioned.</p>
+<p>The <code class="language-text">info</code> command can be run anytime to list the alarms and get information about it. To list the alarms, run the following in the terminal:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ components info
+
+Listing CloudWatch Metrics Alarm <span class="token keyword">for</span> <span class="token string">'rg-billing-alarm-43qnfm6uio'</span>
+-------------------------------------------------------------------------------------
+Metric Name: EstimatedCharges
+Namespace: AWS/Billing
+Alarm Name: rg-billing-alarm-43qnfm6uio
+Alarm Arn: arn:aws:cloudwatch:us-east-1:xxxxxxxxxx:alarm:rg-billing-alarm-43qnfm6uio
+Alarm State: OK
+-------------------------------------------------------------------------------------</code></pre></div>
+<p>You can see the <code class="language-text">outputs</code> in action. The <code class="language-text">output</code> parameters are used to print the information about the alarm.</p>
+<p>And, finally to clean up and remove all resources provisioned by the <code class="language-text">deploy</code> command, run the following in the terminal:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ components remove
+
+Removing CloudWatch Metrics Alarm: <span class="token string">'rg-billing-alarm-43qnfm6uio'</span></code></pre></div>
+<p>In the deployed state of the application, whenever the AWS Billing estimated charges go beyond the configured amount, you will get an email as configured under the SNS topic.</p>
+<h5>Application State</h5>
+<p>We discussed that components manage their own state. Since our application is just a component in itself, it stores it’s state in the <code class="language-text">state.json</code> file, as shown below:</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"$"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"serviceId"</span><span class="token operator">:</span> <span class="token string">"43qnfm6uio"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"cw-billing-alarm-app"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"instanceId"</span><span class="token operator">:</span> <span class="token string">"43qnfm6uio-cvkw0qhg"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"cw-billing-alarm-app:billingAlarm"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"aws-cloudwatch-metric-alarm"</span><span class="token punctuation">,</span>
+    <span class="token property">"state"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"alarmName"</span><span class="token operator">:</span> <span class="token string">"rg-billing-alarm-43qnfm6uio"</span><span class="token punctuation">,</span>
+      <span class="token property">"alarmDescription"</span><span class="token operator">:</span> <span class="token string">"When Estimated Charges > $20"</span><span class="token punctuation">,</span>
+      <span class="token property">"comparisonOperator"</span><span class="token operator">:</span> <span class="token string">"GreaterThanOrEqualToThreshold"</span><span class="token punctuation">,</span>
+      <span class="token property">"threshold"</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+      <span class="token property">"metricName"</span><span class="token operator">:</span> <span class="token string">"EstimatedCharges"</span><span class="token punctuation">,</span>
+      <span class="token property">"namespace"</span><span class="token operator">:</span> <span class="token string">"AWS/Billing"</span><span class="token punctuation">,</span>
+      <span class="token property">"dimensions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"Name"</span><span class="token operator">:</span> <span class="token string">"Currency"</span><span class="token punctuation">,</span>
+          <span class="token property">"Value"</span><span class="token operator">:</span> <span class="token string">"USD"</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"period"</span><span class="token operator">:</span> <span class="token number">28800</span><span class="token punctuation">,</span>
+      <span class="token property">"evaluationPeriods"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"actionsEnabled"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"alarmActions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"arn:aws:sns:us-east-1:xxxxxxxxxxx:NotifyMe"</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"statistic"</span><span class="token operator">:</span> <span class="token string">"Maximum"</span><span class="token punctuation">,</span>
+      <span class="token property">"treatMissingData"</span><span class="token operator">:</span> <span class="token string">"missing"</span><span class="token punctuation">,</span>
+      <span class="token property">"alarm"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"alarmName"</span><span class="token operator">:</span> <span class="token string">"rg-billing-alarm-43qnfm6uio"</span><span class="token punctuation">,</span>
+        <span class="token property">"alarmArn"</span><span class="token operator">:</span> <span class="token string">"arn:aws:cloudwatch:us-east-1:xxxxxxxxx:alarm:rg-billing-alarm-43qnfm6uio"</span><span class="token punctuation">,</span>
+        <span class="token property">"alarmConfigurationUpdatedTimestamp"</span><span class="token operator">:</span> <span class="token string">"2018-05-25T19:06:33.562Z"</span><span class="token punctuation">,</span>
+        <span class="token property">"stateValue"</span><span class="token operator">:</span> <span class="token string">"OK"</span><span class="token punctuation">,</span>
+        <span class="token property">"stateReason"</span><span class="token operator">:</span> <span class="token string">"Threshold Crossed: 1 datapoint [20.0 (25/05/18 11:06:00)] was not greater than or equal to the threshold (20.0)."</span><span class="token punctuation">,</span>
+        <span class="token property">"stateUpdatedTimestamp"</span><span class="token operator">:</span> <span class="token string">"2018-05-25T19:06:34.141Z"</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"instanceId"</span><span class="token operator">:</span> <span class="token string">"43qnfm6uio-fcvgc9c2"</span><span class="token punctuation">,</span>
+    <span class="token property">"internallyManaged"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"rootPath"</span><span class="token operator">:</span> <span class="token string">"../../rg-registry/aws-cloudwatch-metric-alarm"</span><span class="token punctuation">,</span>
+    <span class="token property">"inputs"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"alarmName"</span><span class="token operator">:</span> <span class="token string">"rg-billing-alarm-43qnfm6uio"</span><span class="token punctuation">,</span>
+      <span class="token property">"alarmDescription"</span><span class="token operator">:</span> <span class="token string">"When Estimated Charges > $20"</span><span class="token punctuation">,</span>
+      <span class="token property">"comparisonOperator"</span><span class="token operator">:</span> <span class="token string">"GreaterThanOrEqualToThreshold"</span><span class="token punctuation">,</span>
+      <span class="token property">"threshold"</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+      <span class="token property">"metricName"</span><span class="token operator">:</span> <span class="token string">"EstimatedCharges"</span><span class="token punctuation">,</span>
+      <span class="token property">"namespace"</span><span class="token operator">:</span> <span class="token string">"AWS/Billing"</span><span class="token punctuation">,</span>
+      <span class="token property">"dimensions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"Name"</span><span class="token operator">:</span> <span class="token string">"Currency"</span><span class="token punctuation">,</span>
+          <span class="token property">"Value"</span><span class="token operator">:</span> <span class="token string">"USD"</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"period"</span><span class="token operator">:</span> <span class="token number">28800</span><span class="token punctuation">,</span>
+      <span class="token property">"evaluationPeriods"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"actionsEnabled"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"alarmActions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"arn:aws:sns:us-east-1:xxxxxxxxx:NotifyMe"</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"statistic"</span><span class="token operator">:</span> <span class="token string">"Maximum"</span><span class="token punctuation">,</span>
+      <span class="token property">"treatMissingData"</span><span class="token operator">:</span> <span class="token string">"missing"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>You will notice that our application does not have any state of its own, but includes the state of its child component <code class="language-text">aws-cloudwatch-metric-alarm</code>. If it’s relevant for an application to store its own state, it can do so as well.</p>
+<p><strong>Note:</strong> You can find the full source code for the <code class="language-text">cw-billing-alarm-app</code> application <a href="https://github.com/rupakg/rg-components/tree/master/rg-examples/cw-billing-alarm-app">here</a>.</p>
+<h4>Summary</h4>
+<p>We created a Serverless component from scratch, defined the spec for it’s input and output parameters, and implemented the functionality to create commands that provision, list and cleanup CloudWatch Metric Alarms.</p>
+<p>We looked at some of the features that Serverless Components provide to make it easy to develop reusable components, that can be used to create higher-order components or applications, simply by composing other components.</p>
+<p>At the end, we built an application that will trigger an alarm for AWS Billing estimated charges based on our configured settings. It will also send us an email when the alarm is triggered.</p>
+<p>Hope you enjoyed creating your first Serverless Component and an example application to go with it. If you have any follow-up questions, please hit me via the comments below. And, above all, I would like to hear what cool components and applications you built!</p>
+<h4>More Serverless Components tutorials</h4>
+<ul>
+<li><a href="https://serverless.com/blog/what-are-serverless-components-how-use/">What are Serverless Components, and how do I use them?</a></li>
+<li><a href="https://serverless.com/blog/how-create-rest-api-serverless-components/">Create a REST API with pre-written Serverless Components</a></li>
+<li><a href="https://serverless.com/blog/how-to-create-landing-page-with-serverless-components/">Create a static landing page with pre-written Serverless Components</a></li>
+<li><a href="https://serverless.com/blog/how-create-dynamic-website-with-serverless-components/">Create a dynamic retail site with pre-written Serverless Components</a></li>
+<li><a href="https://serverless.com/blog/how-to-create-blog-using-components-hugo/">Create a blog site with pre-written Serverless Components and Hugo</a></li>
+</ul>
+<h5>Roadmap</h5>
+<p>We are continuously adding features to Serverless Components, so be on the lookout for future updates via our newsletter, articles on our log and watch the Github repo. <a href="https://github.com/serverless/components/tree/master/examples/features">Examples of features</a> are being added on a regular basis.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/lumen/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/lumen/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/lumen/posts/2018-05-31-how-create-dynamic-website-with-serverless-components/">← <!-- -->How to Create a Dynamic Site with Pre-built Serverless Components</a></li><li><a rel="next" href="/lumen/posts/2018-06-06-build-geosearch-graphql-api-aws-appsync-elasticsearch/">Build a Serverless GeoSearch GraphQL API using AWS AppSync &amp; Elasticsearch<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/2018-06-04-how-write-first-serverless-component/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-36e457a5393b79b99515.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/lumen/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/lumen/cd7d5f864fc9e15ed8adef086269b0aeff617554-c8f68cb3ade1320f5257.js" async=""></script><script src="/lumen/commons-4c36ffabef1434ec1126.js" async=""></script><script src="/lumen/app-36e457a5393b79b99515.js" async=""></script><script src="/lumen/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/lumen/framework-5fc6169171e885c3b522.js" async=""></script><script src="/lumen/webpack-runtime-c76c0c9d42bc9bf56761.js" async=""></script></body></html>
